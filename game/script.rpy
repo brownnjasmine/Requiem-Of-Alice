@@ -166,6 +166,11 @@ label start:
     narrator "The necklace slips over your head and you feel the weight on your neck. It dangles quite low, almost touching your feet. She backs away, staring at you intently. You close your eyes thinking something should happen. The most you feel is a little itchy."
 
 
+    
+    ### -------------------- Section 2 -------------------- ###
+
+
+
 
 
 
