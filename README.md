@@ -1,5 +1,5 @@
 # Requiem-Of-Alice
 
-Avery :3
+Written and illustrated by (Discord) far from home#7954
 
-Assets and Script for the visual novel, Requiem of Alice
+Visual novel, Requiem of Alice
