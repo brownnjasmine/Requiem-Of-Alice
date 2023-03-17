@@ -1,35 +1,35 @@
-Fri Mar 17 17:05:09 2023
+Fri Mar 17 17:23:44 2023
 Windows-10-10.0.19044
 Ren'Py 8.0.3.22090809
  
 
-Bootstrap to the start of init.init took 0.05s
-Early init took 0.00s
+Bootstrap to the start of init.init took 0.09s
+Early init took 0.01s
 Loader init took 0.05s
-Loading error handling took 0.11s
-Loading script took 1.39s
-Loading save slot metadata. took 0.01s
+Loading error handling took 0.31s
+Loading script took 3.88s
+Loading save slot metadata. took 0.08s
 Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'F:\\Users\\default.default-PC\\Documents\\Renpy\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.13s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Jasmine\\Documents\\Messing around\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.64s
 Loading analysis data took 0.00s
-Analyze and compile ATL took 0.00s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\default.default-PC\\AppData\\Roaming/RenPy/backups\\Requiem-Of-Alice':
-Dump and make backups. took 0.05s
+Backing up script files to 'C:\\Users\\Jasmine\\AppData\\Roaming/RenPy/backups\\Requiem-Of-Alice':
+Dump and make backups. took 0.20s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.000000
+Initial gc. took 0.06s
+DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.42s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
+Init translation took 0.18s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.01s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.03s
+Analyze screens took 0.14s
+Save screen analysis took 0.05s
+Prepare screens took 0.60s
+Save pyanalysis. took 0.05s
+Save bytecode. took 0.13s
