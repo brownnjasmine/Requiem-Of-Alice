@@ -7,6 +7,8 @@ define unknown = Character("???")
 define narrator = Character("Narrator")
 define unknownWoman = Character("Unknown Woman")
 
+#Declaring backgrounds
+
 
 # The game starts here.
 
@@ -19,7 +21,7 @@ label start:
     scene Room_Blank
 
     # Display the character portrait expression "Actor_Blank_NA.png" from the images directory
-    show Actor_Blank_NA
+    #show Actor_Blank_NA
 
     # Display lines of dialogue.
 
@@ -32,7 +34,7 @@ label start:
     narrator "You open your eyes to try and see where you’re at."
 
     # Background change: Mysterious Room
-    scene Room_Mysterious
+    scene Room_Mysterious_Room_Mathilda_s_House
 
     unknown "I don’t recognize this room, but it looks nice."
 
