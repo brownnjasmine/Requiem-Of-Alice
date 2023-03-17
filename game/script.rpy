@@ -68,7 +68,7 @@ label start:
     # Section 1 Choice 1
     # Offer the player a choice
     menu:
-        narrator "What do you do?"
+        n "What do you do?"
 
         "Come out from table":
 
@@ -177,23 +177,23 @@ label start:
     # Background change: Mysterious Room
     scene Room_Mysterious
 
-    narrator "You open your eyes and nothing has changed, the look on the human’s face is sad. You wish you could change it. The treat no longer sounded nice seeing how it made her so disappointed."
+    n "You open your eyes and nothing has changed, the look on the human’s face is sad. You wish you could change it. The treat no longer sounded nice seeing how it made her so disappointed."
 
-    narrator "That’s when the necklace starts to glow. It freaks you out a little bit. You see a smile start to creep on her face, so maybe that was supposed to happen?"
+    n "That’s when the necklace starts to glow. It freaks you out a little bit. You see a smile start to creep on her face, so maybe that was supposed to happen?"
 
     unknownWoman "It’s working!"
 
-    narrator "You feel horrible all over. The necklace seems to shrink…or wait, are you growing? You can’t tell as the glow is surrounding your very self. You squeeze your eyes shut trying to endure this and end up curling up. That does last long as you break the chair from your weight leaving you on the floor."
+    n "You feel horrible all over. The necklace seems to shrink…or wait, are you growing? You can’t tell as the glow is surrounding your very self. You squeeze your eyes shut trying to endure this and end up curling up. That does last long as you break the chair from your weight leaving you on the floor."
 
     unknownWoman "Doggie?"
 
-    narrator "She sounds concerned, but you won’t stop holding your legs. Wait holding? You peek an eye open to see the glow is gone and so is all your fur."
+    n "She sounds concerned, but you won’t stop holding your legs. Wait holding? You peek an eye open to see the glow is gone and so is all your fur."
 
     unknown "Gaaah!"
 
     unknownWoman "Wait, it’s okay! Calm down, I'm here."
 
-    narrator "She grabs you, helping you sit up at least. She then wraps a blanket around your now hairless body."
+    n "She grabs you, helping you sit up at least. She then wraps a blanket around your now hairless body."
 
     # Background change: Transformation CG
     scene CG_Transformation
@@ -204,28 +204,31 @@ label start:
 
     unknownWoman "Yes, isn’t it wonderful?"
 
-    narrator "You take a look at your new form. You’re human. A big naked human!"
+    n "You take a look at your new form. You’re human. A big naked human!"
 
     unknown "What did you do? Why? W-what do I do?"
 
     unknownWoman "I know you have a lot of questions, but let’s get you dressed, first."
 
-    narrator "You give a judgemental look before following her lead. Or trying to follow, your new legs are not as well balanced and you’re not sure what to do with your front legs."
+    n "You give a judgemental look before following her lead. Or trying to follow, your new legs are not as well balanced and you’re not sure what to do with your front legs."
 
     # Background change: Mysterious Room
     scene Room_Mysterious
 
-    narrator "She takes you and dresses you before letting you sit on a chair. She ties up what’s left of your hair into what she called a ‘pony tail’. Speaking of, you don’t have a tail. It made sitting easier, but balancing harder."
+    n "She takes you and dresses you before letting you sit on a chair. She ties up what’s left of your hair into what she called a ‘pony tail’. Speaking of, you don’t have a tail. It made sitting easier, but balancing harder."
 
     # Section 2 Choice 1 ### TODO ###
     menu:
         unknownWoman "Now, I’m sure you have questions. Go ahead and ask away. I’ll do my best to answer."
 
         "Who are you?":
+            "placeholder"
 
         "Why did you change me?":
+            "placeholder"
 
         "What is up with the necklace?":
+            "placeholder"
 
 
 
