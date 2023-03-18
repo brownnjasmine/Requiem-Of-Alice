@@ -8,6 +8,8 @@ define n = Character("")
 define unknownWoman = Character("Unknown Woman")
 define mathilda = Character("Mathilda")
 
+#Declaring backgrounds
+
 
 # The game starts here.
 
@@ -17,10 +19,10 @@ label start:
 
     # Background: Black Screen
     # Display the background "Room_Blank.jpg" from the images directory
-    scene Room_Blank
+    scene room_blank
 
     # Display the character portrait expression "Actor_Blank_NA.png" from the images directory
-    show Actor_Blank_NA
+    #show Actor_Blank_NA
 
     # Display lines of dialogue.
 
@@ -33,8 +35,10 @@ label start:
     n "You open your eyes to try and see where you’re at."
 
     # Background change: Mysterious Room
-    scene Room_Mysterious
+    scene room_mysterious_room_mathilda_s_house
+    with dissolve
 
+    
     unknown "I don’t recognize this room, but it looks nice."
 
     n "The room has very little light, but what you can see seems well furnished. The pillow you are laying on looks like satin."
