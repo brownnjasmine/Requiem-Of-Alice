@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 21: end of line expected.
-    scene room_blank.jpg
-                    ^
+File "game/script.rpy", line 3: expected '=' not found.
+    image mc image = "characters/inui/icon"
+             ^
+
+File "game/script.rpy", line 4: expected '=' not found.
+    image mathilda image = "characters/mathilda/neutral"
+                   ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Mar 17 16:51:57 2023
+Sat Mar 18 13:04:18 2023

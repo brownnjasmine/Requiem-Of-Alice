@@ -1,35 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 11, in script
-    image room_blank = room_blank.jpg
-  File "game/script.rpy", line 11, in script
-    image room_blank = room_blank.jpg
-  File "game/script.rpy", line 11, in <module>
-    image room_blank = room_blank.jpg
-NameError: name 'room_blank' is not defined
+  File "game/script.rpy", line 72, in script
+    n dog hungry "That’s definitely your stomach. You successfully get onto all four legs to try and look around for food scraps or a trash can."
+Exception: Say has image attributes ('dog', 'hungry'), but there's no image tag associated with the speaking character.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\Jasmine\Documents\Messing around\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "C:\Users\Jasmine\Documents\Messing around\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
-    renpy.game.context().run(node)
-  File "game/script.rpy", line 11, in script
-    image room_blank = room_blank.jpg
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/script.rpy", line 11, in script
-    image room_blank = room_blank.jpg
-  File "C:\Users\Jasmine\Documents\Messing around\renpy-8.0.3-sdk\renpy\ast.py", line 1230, in execute
-    img = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\Jasmine\Documents\Messing around\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 11, in <module>
-    image room_blank = room_blank.jpg
-NameError: name 'room_blank' is not defined
+  File "game/script.rpy", line 72, in script
+    n dog hungry "That’s definitely your stomach. You successfully get onto all four legs to try and look around for food scraps or a trash can."
+  File "C:\Users\soul.toaster\Documents\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\soul.toaster\Documents\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\soul.toaster\Documents\renpy-8.0.3-sdk\renpy\character.py", line 1206, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+  File "C:\Users\soul.toaster\Documents\renpy-8.0.3-sdk\renpy\character.py", line 1030, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+  File "C:\Users\soul.toaster\Documents\renpy-8.0.3-sdk\renpy\character.py", line 956, in resolve_say_attributes
+    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
+Exception: Say has image attributes ('dog', 'hungry'), but there's no image tag associated with the speaking character.
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 Requiem of Alice 0.0.1
-Fri Mar 17 16:51:07 2023
+Sat Mar 18 13:54:37 2023
