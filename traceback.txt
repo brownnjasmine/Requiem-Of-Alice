@@ -1,35 +1,29 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 11, in script
-    image room_blank = room_blank.jpg
-  File "game/script.rpy", line 11, in script
-    image room_blank = room_blank.jpg
-  File "game/script.rpy", line 11, in <module>
-    image room_blank = room_blank.jpg
-NameError: name 'room_blank' is not defined
+  File "game/script.rpy", line 773, in script
+    claudia "Sorry about that, kitty. I just wanted to introduce myself, but it looks like my tail beat me to it."
+NameError: name 'claudia_name' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\Jasmine\Documents\Messing around\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "C:\Users\Jasmine\Documents\Messing around\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
-    renpy.game.context().run(node)
-  File "game/script.rpy", line 11, in script
-    image room_blank = room_blank.jpg
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/script.rpy", line 11, in script
-    image room_blank = room_blank.jpg
-  File "C:\Users\Jasmine\Documents\Messing around\renpy-8.0.3-sdk\renpy\ast.py", line 1230, in execute
-    img = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\Jasmine\Documents\Messing around\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+  File "game/script.rpy", line 773, in script
+    claudia "Sorry about that, kitty. I just wanted to introduce myself, but it looks like my tail beat me to it."
+  File "F:\Users\default.default-PC\Documents\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "F:\Users\default.default-PC\Documents\Renpy\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "F:\Users\default.default-PC\Documents\Renpy\renpy-8.0.3-sdk\renpy\character.py", line 1248, in __call__
+    who = renpy.python.py_eval(who)
+  File "F:\Users\default.default-PC\Documents\Renpy\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "F:\Users\default.default-PC\Documents\Renpy\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 11, in <module>
-    image room_blank = room_blank.jpg
-NameError: name 'room_blank' is not defined
+  File "<none>", line 1, in <module>
+NameError: name 'claudia_name' is not defined
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
-Requiem of Alice 0.0.1
-Fri Mar 17 16:51:07 2023
+Requiem of Alice 0.0.2
+Sat Mar 18 13:52:05 2023
