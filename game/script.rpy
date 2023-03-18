@@ -1,11 +1,29 @@
 ﻿# The script of the game goes in this file.
 
+#Character Images
+image mc= im.FactorScale("images/characters/inui/home_neutral.png", 0.5)
+image mc dog= im.FactorScale("images/characters/inui/dog_neutral.png", 0.5)
+image mc dog happy=im.FactorScale("images/characters/inui/dog_hungry_happy.png", 0.5)
+image mc dog hungry=im.FactorScale("images/characters/inui/dog_hungry_happy.png", 0.5)
+image mc dog confused=im.FactorScale("images/characters/inui/dog_confused.png", 0.5)
+image mc dog sad=im.FactorScale("images/characters/inui/dog_sad.png", 0.5)
+#Mathilda Images
+image mathilda= im.FactorScale("images/characters/mathilda/neutral.png", 0.5)
+image mathilda happy=im.FactorScale("images/characters/mathilda/happy.png", 0.5)
+image mathilda sad pensive=im.FactorScale("images/characters/mathilda/sad_pensive.png", 0.5)
+image mathilda sad resigned=im.FactorScale("images/characters/mathilda/sad_resigned.png", 0.5)
+image mathilda stern=im.FactorScale("images/characters/mathilda/stern.png", 0.5)
+
+#background images
+image blank = "images/backgrounds/blank.jpg"
+image mathildas house= "images/backgrounds/mysterious_mathilda_s_house.jpg"
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-
-define pov = Character("[povname]")                     # The player character
+define pov = Character("[povname]", kind=adv, image="mc")                     # The player character
 define n = Character("")                                # The narrator
-define mathilda = DynamicCharacter("mathilda_name")     # Mathilda
+define mathilda = Character("mathilda_name", kind=adv, image="mathilda", dynamic=True)   # Mathilda
+
 define fabien = Character("Fabien LeBlanc")             # Fabien LeBlanc
 define tatianna = Character("tatianna_name", dynamic=True)
 define levy = Character("levy_name", dynamic=True)
@@ -47,8 +65,7 @@ label start:
 
     # Background: Black Screen
     # Display the background "Room_Blank.jpg" from the images directory
-    scene room_blank
-
+    scene blank
     # Display the character portrait expression "Actor_Blank_NA.png" from the images directory
     #show Actor_Blank_NA
 
@@ -63,15 +80,17 @@ label start:
     n "You open your eyes to try and see where you’re at."
 
     # Background change: Mysterious Room
-    scene room_mysterious_room_mathilda_s_house
+    scene mathildas house
     with dissolve
 
-    
+    show mc dog at left
+    with dissolve
+
     pov "I don’t recognize this room, but it looks nice."
 
     n "The room has very little light, but what you can see seems well furnished. The pillow you are laying on looks like satin."
 
-    pov "*Growl*"
+    pov dog hungry "*Growl*"
 
     n "That’s definitely your stomach. You successfully get onto all four legs to try and look around for food scraps or a trash can."
 
@@ -79,14 +98,20 @@ label start:
 
     n "You find a basket with what looks like treats! Your tummy growls louder as if begging you to dig in. One bite tells you that it is wrapped in plastic, leaving the snack crushed behind its clear shell."
 
-    pov "Noooo!"
+    pov dog sad"Noooo!"
 
     n "Your whine sounds out as you drag the plastic wrapped treat out using your paws to try and free your snack."
 
-    pov "*Squeak*"
+    pov dog -sad "*Squeak*"
 
     n "Your ears perk as it sounds like a door squeak, followed by footsteps. Someone is coming! You thought at first to be happy someone could open up your treat, only to realize you have no idea if this person is friendly. You grab your snack and sneak under the table to check out who was about to walk into the room."
 
+    hide mc dog
+    with dissolve
+   
+
+    show mathilda at right
+    with moveinright
     mathilda "Little doggie, I’m back home!"
 
     n "A small light comes in as she closes the door behind her. Hopefully you didn’t need that to escape."
