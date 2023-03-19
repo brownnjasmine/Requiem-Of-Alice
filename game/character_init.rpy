@@ -73,11 +73,11 @@ define pov = Character("[povname]", kind=adv, image="mc")                     # 
 define n = Character("")                                # The narrator
 define mathilda = Character("mathilda_name", kind=adv, image="mathilda", dynamic=True)   # Mathilda
 
-define fabien = Character("Fabien LeBlanc")             # Fabien LeBlanc
-define tatianna = Character("tatianna_name", dynamic=True)
-define levy = Character("levy_name", dynamic=True)
-define mira = Character("mira_name", dynamic=True)
-define claudia = Character("claudia_name", dynamic=True)
+define fabien = Character("Fabien LeBlanc", kind=adv, image="fabien")             # Fabien LeBlanc
+define tatianna = Character("tatianna_name", kind=adv, image="tatianna", dynamic=True)
+define levy = Character("levy_name", kind=adv, image="leveret",dynamic=True)
+define mira = Character("mira_name", kind=adv, image="mira", dynamic=True)
+define claudia = Character("claudia_name", kind=adv, image="claudia", dynamic=True)
 define unknown = Character("???")
 define follow1 = Character("Follower 1")
 define follow2 = Character("Follower 2")
