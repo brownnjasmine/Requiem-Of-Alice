@@ -70,7 +70,7 @@ label start:
     with dissolve
    
 
-    show mathilda at right
+    show mathilda happy at right
     with moveinright
     mathilda "Little doggie, I’m back home!"
 
@@ -78,7 +78,7 @@ label start:
 
     mathilda "…"
 
-    mathilda "Little doggie?"
+    mathilda -happy "Little doggie?"
 
     n "Sounds like she’s calling for you."
 
@@ -95,13 +95,15 @@ label start:
 
             n "You stay under the table guarding the snack. She peeks her head underneath, instantly spotting you. Busted."
 
-    mathilda "There you are. What’s that you got?"
+    show mc dog
+    mathilda happy "There you are. What’s that you got?"
+    show mathilda stern
 
     n "She takes the treat from you to take a better look at it. She gasps before putting it away and then grabbing the basket and putting it on the table out of reach."
 
-    pov "*Whine, whine*"
+    pov dog sad "*Whine, whine*"
 
-    mathilda "Sorry, puppy, you can’t have chocolate. If you’re hungry, I have something that will be much better."
+    mathilda -stern "Sorry, puppy, you can’t have chocolate. If you’re hungry, I have something that will be much better."
 
     n "You don’t know what would be better, but you sit patiently as she reaches for something on a high shelf."
 

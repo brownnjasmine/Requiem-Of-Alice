@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 253: expected statement.
-    menuS2C1Selected[0] = True
-                        ^
-
-File "game/script.rpy", line 264: expected statement.
-    menuS2C1Selected[1] = True
-                        ^
-
-File "game/script.rpy", line 274: expected statement.
-    menuS2C1Selected[2] = True
-                        ^
+File "game/script.rpy", line 100: expected statement.
+    mathilda stern
+                  ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Mar 18 13:31:13 2023
+Sat Mar 18 20:03:22 2023
