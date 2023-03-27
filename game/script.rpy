@@ -24,12 +24,7 @@ label start:
     ### -------------------- Section 1 -------------------- ###
 
     # Background: Black Screen
-    # Display the background "Room_Blank.jpg" from the images directory
     scene blank
-    # Display the character portrait expression "Actor_Blank_NA.png" from the images directory
-    #show Actor_Blank_NA
-
-    # Display lines of dialogue.
 
     pov "Where am I? I can’t remember what I was doing…"
 
@@ -48,23 +43,23 @@ label start:
 
     pov "I don’t recognize this room, but it looks nice."
 
-    n "The room has very little light, but what you can see seems well furnished. The pillow you are laying on looks like satin."
+    n "The room is dimly lit, but what you can see seems well furnished. There’s many plants hanging on the ceiling, sparkly things on shelves, and a nice big bed. The pillow you are laying on feels smooth and soft like satin."
 
     pov dog hungry "*Growl*"
 
-    n "That’s definitely your stomach. You successfully get onto all four legs to try and look around for food scraps or a trash can."
+    n "That’s definitely your stomach. You stretch before standing up, sniffing the air to look around for food scraps or a trash can."
 
     pov "There’s gotta be a little snack hidden around here…"
 
-    n "You find a basket with what looks like treats! Your tummy growls louder as if begging you to dig in. One bite tells you that it is wrapped in plastic, leaving the snack crushed behind its clear shell."
+    n "You find a basket with what looks like treats! Your tummy growls louder, begging you to dig in. You bite down eagerly, only to be met with the bland, heartbreaking taste of plastic wrap. The snack is crushed inside its clear shell."
+    
+    pov dog sad "Noooo!"
 
-    pov dog sad"Noooo!"
-
-    n "Your whine sounds out as you drag the plastic wrapped treat out using your paws to try and free your snack."
+    n "A whine sounds from you as you drag the plastic-wrapped treat out, trying in vain to free the snack with your paws. It only manages to crush your snack further into dust."
 
     pov dog -sad "*Squeak*"
 
-    n "Your ears perk as it sounds like a door squeak, followed by footsteps. Someone is coming! You thought at first to be happy someone could open up your treat, only to realize you have no idea if this person is friendly. You grab your snack and sneak under the table to check out who was about to walk into the room."
+    n "Your ears perk up at a creak/squeak, followed by footsteps. Someone is coming! At first you are happy, since that someone could open up your treat, but then you realize you have no idea whether this person is friendly or not. You grab your snack and sneak under the table to see who's coming."
 
     hide mc dog
     with dissolve
@@ -96,10 +91,10 @@ label start:
             n "You stay under the table guarding the snack. She peeks her head underneath, instantly spotting you. Busted."
 
     show mc dog
-    mathilda happy "There you are. What’s that you got?"
+    mathilda happy "There you are. What’s that you’ve got?"
     show mathilda stern
 
-    n "She takes the treat from you to take a better look at it. She gasps before putting it away and then grabbing the basket and putting it on the table out of reach."
+    n "She takes the treat from you to get a better look. She gasps, grabbing the basket and putting all the treats on the table, well out of your reach."
 
     pov dog sad "*Whine, whine*"
 
@@ -107,38 +102,38 @@ label start:
 
     show mc dog
 
-    n "You don’t know what would be better, but you sit patiently as she reaches for something on a high shelf."
+    n "You are still heartbroken at the loss of your beloved snack, but you sit patiently as she reaches for something on a high shelf."
 
     mathilda happy "Here, some yummy and safe dog food."
 
     show mc dog happy
-    n "You see what looks like a couple small sausages. Your mouth waters before you give a quick sniff to check if it’s safe. You then happily tear into your meal."
+    n "Your nose is filled with the delicious smell of sausages. You peek into the woman's hand. They're a little smaller than you would have liked. Allowing one more cautious sniff for safety, you happily tear into your meal."
 
     mathilda -happy "Glad you like it."
 
-    n "You finish your meal with gusto before going to sit back on your pillow. The human had just been watching this whole time. She stares at you with great interest, as if you were the only thing in the room."
+    n "You finish your meal with gusto before going to sit back on your pillow. The human has just been watching you this whole time. She stares at you with great interest, as if you're the only thing in the room."
 
     show mc dog
     
     mathilda "All done?"
 
-    n "You give a little nod as you lay. Now fed, you thought about why you were here. You know you didn’t have anyone you belonged to. The last thing you remember is digging through trash, actually. You also hadn’t even made a note that you understand this human and she seemed to understand you."
+    n "You give a little nod as you lay down. Now fed, you think about why you're here. You know you don't belong to anybody. The last thing you remember is digging through trash, actually. It finally occurs to you that you and this human seem to understand each other."
 
     pov "Bark!"
 
-    n "No words came out of your mouth, but you were trying to ask why you were here. Not like you had anywhere else to be, but you’d like to know who this person was and what they wanted with you."
+    n "No words come out of your mouth, but you were trying to ask why you're here. Not like you have anywhere else to be, but you'd like to know who this person is and what they want with you."
 
-    mathilda "Settle down, you can’t talk, silly. I can explain as long as you can understand me."
+    mathilda "Settle down. You can’t talk, silly. I can explain as long as you can understand me."
 
-    n "Another nod as you prepared to hear what she had to say."
+    n "Another nod as you prepare to hear what she has to say."
 
     mathilda "First, I found you and was letting you heal from your accident."
 
-    n "She gestures to your hind leg. It felt funny, but hadn’t noticed anything else wrong with it. That and your head barely lets you see it. You can see something on it that looks like a sock."
+    n "She gestures to your hind leg. It feels funny, but you hadn't noticed anything else wrong with it. That, and you can't turn properly to get a good look. You can see something on it that looks like a sock. You are overwhelmed by the urge to start tearing it off, but not while she’s watching."
 
     mathilda "I’m happy to see you recovering quickly. I think you’ve noticed you’re not an ordinary little dog, are you?"
 
-    n "She has a point. Not most dogs understand humans. Other dogs could learn names or commands, but you knew every word. Even the ones you didn’t want to hear."
+    n "She has a point. Not every dog can understand humans. Other dogs can learn names or commands, but you know every word - even the ones you don't want to hear."
 
     # Section 1 Choice 2
     menu:
@@ -154,39 +149,39 @@ label start:
 
             mathilda "I promise you won’t be harmed."
             show mc dog
-            n "You look at your feet mulling it over for a moment before nodding. She scoops you up from the pillow into her arms."
+            n "You look at your feet, mulling it over for a moment, before nodding. She scoops you up from the pillow into her arms."
 
-    n "You have a new view of the room from a better vantage point. It looks messy with how many books, crystals, plants, and other things are strewn about. You are soon placed on a chair on the other side of the room."
+    n "Your new vantage point reveals that the room is a total mess: books, crystals, plants, and other things are strewn all about. The human plops you in a chair on the other side of the room."
 
     mathilda "Stay here for one moment. I’ll be right back."
     show mc dog hungry
     n "You sit and stay like a good dog. You hope she’ll give you a little pet for being good. Then again, you were unsure about this test. Most things you knew were about sitting, staying, and occasionally, playing dead. Your greedy tummy hoped she’d be back with a box of treats."
 
-    n "It didn’t take long before she appeared back with a small delicate box. Your tail wags in excitement."
+    n "It doesn't take long for her to reappear with a small, delicate box. Your tail wags in excitement."
 
     mathilda "Don’t get too excited, this isn’t for treats."
     show mc dog sad
     n "Your little head droops and your tail stops as your hopes are crushed. You do get a pat on the head with a scritch behind the ear. Seems like she doesn’t like seeing a pouty face."
     show mc dog
-    mathilda "Alright then, let’s begin shall we?"
+    mathilda "Alright, then. Let's begin shall we?"
 
-    n "She opens the box and the necklace is inside. You give it a sniff before she lifts it to show it off. It hangs from a gold chain down to a big red gem at the end. You know humans love this stuff. Even you can appreciate that it sparkles and looks pretty."
+    n "She opens the box and a necklace is inside. You give it a sniff before she lifts it out to show it off. A big red gem swings on the end of a gold chain. You know humans love this stuff; even you can appreciate that it sparkles and looks pretty."
 
-    mathilda stern "Be careful as this necklace is no ordinary necklace. It contains the love, blood, and betrayal of the life before it."
+    mathilda stern "Be careful; this necklace is no ordinary necklace. It contains the love of the life before it."
 
-    n "You are not really sure what that means, but the way she stares at the necklace with intensity, you know it must be important."
+    n "You are not really sure what that means, but the intensity in her eyes as she stares at the necklace tells you it must be important."
 
-    mathilda -stern "What I plan to do is give this to you. I want to undo what has been done and I think you’ll be able to do it."
+    mathilda -stern "I plan to give this to you. I think you might be able to undo what has been done."
 
     show mc dog confused
     n "You tilt your head. She’s being really vague and also you’re a dog. A smart and adorable dog. But a dog."
 
-    mathilda "I know how it sounds, but trust me. I’ve been working on this for a while. At worst, you’re not what I’m looking for and I’m happy to have a new friend. I have a feeling about this though."
+    mathilda "I know how it sounds, but please trust me. I've been working on this for a long time. Worst case, you're not what I'm looking for, and we can be friends anyway. I have a hunch about this, though."
 
     show mc dog
-    n "You figure that she knows what she’s talking about and at least you’ll give it a try."
+    n "She sounds like she knows what she's talking about, so you decide you'll at least give it a try."
 
-    mathilda "Alright, I will put this on you. If I’m right something should happen. If not, I’ll take it off and get you a treat."
+    mathilda "Alright, I will put this on you. If I’m right, something should happen. If not, I’ll take it off and get you a treat."
 
     n "Your tail wiggles as you try to stay still. You think putting on a necklace shouldn’t hurt so you’re looking forward to an easy treat."
 
@@ -212,7 +207,7 @@ label start:
     with dissolve
 
     show mc dog sad
-    n "You open your eyes and nothing has changed, the look on the human’s face is sad. You wish you could change it. The treat no longer sounded nice seeing how it made her so disappointed."
+    n "You open your eyes and nothing has changed. The look on the human's face is sad. You wish you could change it. Seeing her disappointment, you are no longer looking forward to your treat. Not as much, anyway."
 
     n "That’s when the necklace starts to glow. It freaks you out a little bit. You see a smile start to creep on her face, so maybe that was supposed to happen?"
     show mc dog confused
@@ -220,11 +215,11 @@ label start:
 
     scene blank
     with fade
-    n "You feel horrible all over. The necklace seems to shrink…or wait, are you growing? You can’t tell as the glow is surrounding your very self. You squeeze your eyes shut trying to endure this and end up curling up. That does last long as you break the chair from your weight leaving you on the floor."
+    n "You feel horrible all over. The necklace starts to shrink… or wait, are you growing? You can’t tell; the glow surrounds you. You squeeze your eyes shut, curling into a ball, trying anything to endure this. You hear the chair creak before it breaks apart beneath you, and sprawl out onto the floor."
 
     mathilda "Doggie?"
 
-    n "She sounds concerned, but you won’t stop holding your legs. Wait holding? You peek an eye open to see the glow is gone and so is all your fur."
+    n "She sounds concerned, but you can’t stop holding your legs. Wait. Holding? You crack an eye open to see the glow is gone. So is all your fur."
 
     scene mathildas house
     with fade
@@ -239,7 +234,7 @@ label start:
 
     mathilda "Wait, it’s okay! Calm down, I'm here."
 
-    n "She grabs you, helping you sit up at least. She then wraps a blanket around your now hairless body."
+    n "She grabs you, helping you sit up at least. She then wraps a blanket around your now-hairless body."
 
     # Background change: Transformation CG
     scene transformation cg
@@ -257,7 +252,7 @@ label start:
 
     mathilda "I know you have a lot of questions, but let’s get you dressed, first."
 
-    n "You give a judgemental look before following her lead. Or trying to follow, your new legs are not as well balanced and you’re not sure what to do with your front legs."
+    n "You give a judgemental look before following her lead. Or trying to follow; your new legs are not as well-balanced and you’re not sure what to do with your front legs."
 
     # Background change: Mysterious Room
     scene mathildas house
@@ -268,7 +263,7 @@ label start:
 
     show mc at left
     with dissolve
-    n "She takes you and dresses you before letting you sit on a chair. She ties up what’s left of your hair into what she called a ‘pony tail’. Speaking of, you don’t have a tail. It made sitting easier, but balancing harder."
+    n "She takes you and dresses you before letting you sit on a chair. She ties up what’s left of your hair into what she called a ‘pony tail’. Speaking of, you don’t have a tail. It makes sitting easier, but balancing harder."
 
     # Section 2 Choice 1
     menu menuS2C1Head:
@@ -281,7 +276,7 @@ label start:
             pov confused "Who are you?"
 
             $ mathilda_name = "Mathilda"
-            mathilda "Mathilda, I work with magic and potions."
+            mathilda "My name is Mathilda. I work with magical artifacts and potions, which is how I found that necklace."
 
             jump menuS2C1Head
 
@@ -291,7 +286,7 @@ label start:
             $ menuS2C1Selected[1] = True
             pov confused "Why did you change me?"
 
-            mathilda "The necklace needed a vessel. It contains a power that could save this world."
+            mathilda "The necklace needed a vessel, I believe. It contains a power that can help me learn the truth."
 
             jump menuS2C1Head
 
@@ -301,7 +296,7 @@ label start:
             $ menuS2C1Selected[2] = True
             pov confused "What is up with the necklace?"
             
-            mathilda "The necklace is embedded with power that I cannot possess. It chooses a wearer and they alone can wield the power to save us."
+            mathilda "A power that I cannot possess is embedded in this necklace. It chooses a wearer, and they alone wield the power to save us."
 
             jump menuS2C1Head
 
@@ -332,16 +327,16 @@ label start:
 
     mathilda -happy "I’m sure this is a lot for one evening. Not to mention you will need to get used to this new body."
 
-    n "I wanted to know more, but I’ll save it for later. In the meantime, I was moved to a bed to rest. My body still tingles all over."
+    n "I want to know more, but I’ll save it for later. In the meantime, Mathilda helps me move to a bed to rest. My body still tingles all over."
 
     mathilda "This bell here is if you need me. Ring it if you need help walking, food, anything."
 
-    n "I nodded before going to sleep."
+    n "I nod before going to sleep."
 
     # Background change: Blank Room
     scene blank
 
-    n "My dreams felt familiar, but I couldn’t recognize anyone. It felt like a memory, but this memory was me as a human. As far as I remember, I had been a dog until this point. I was in a beautiful garden with someone else. It felt nostalgic."
+    n "My dreams felt familiar, but I couldn’t recognize anyone. It felt like a memory, but this memory was me as a human. As far as I remembered, I had been a dog until this point. I was in a beautiful garden with someone else. It felt nostalgic."
 
     # Background change: Mysterious Room
     scene mathildas house
@@ -360,11 +355,11 @@ label start:
 
     mathilda "Still getting used to everything?"
 
-    n "I nodded."
+    n "I nod."
 
     mathilda happy "Don’t worry, I will help you learn everything you need."
 
-    n "I was listening, but the smell of the bowl distracted me. Soon enough I grabbed the spoon and took a bite. A little sloppy, but delicious."
+    n "I was listening, but the smell of the bowl distracted me. Soon enough I grab the spoon and take a bite. A little sloppy, but delicious."
 
     # Background change: Breakfast with Mathilda CG
     scene breakfast cg
@@ -386,7 +381,7 @@ label start:
     show mathilda at right
     with dissolve
 
-    n "Soon enough, I was walking, talking, and acting like a human. Mathilda was patient, but it only took a couple weeks. I figured now I was human, I should ask what she wanted me to do. We were having breakfast and figured it was better now than to keep waiting."
+    n "Soon enough, I was walking, talking, and acting like a human. Mathilda was patient, but it only took a couple weeks. I figured that, now I was human, I should ask what she wanted me to do. As we were having breakfast, I decided it was better now than to keep waiting."
 
     pov "Hey, can I ask a question?"
 
@@ -394,21 +389,21 @@ label start:
 
     pov "Now that I’m human, what is it I’m supposed to do?"
 
-    n "She was in the middle of sipping tea before pausing at the question. She set her cup down gently before a sigh."
+    n "She paused with her teacup halfway to her lips, before setting it down gently with a sigh."
 
-    mathilda sad resigned "I almost forgot. That’s right. You were such nice company, I forgot that you can’t stay here…"
+    mathilda sad resigned "…That’s right. You were such nice company, I forgot that you can’t stay here…"
 
     pov confused "Why? Where am I going?"
 
-    mathilda stern "It’s time you let you know everything. Settle in, this might take a while."
+    mathilda stern "It’s time to let you know everything. Settle in, this might take a while."
 
     n "I felt nervous, but tried to get comfortable."
 
-    mathilda "This world is in trouble. In fact, the reason you were injured is related to this. You were attacked as a small dog and I helped you, of course. But, you were attacked by shadows. They tend only to manifest near and attack humans. Which is why you stood out to me. This necklace can help fight them."
+    mathilda "The world is in jeopardy. You have encountered this danger yourself first hand, when you were hurt. When I found you, you were being attacked by shadows. Shadows, you see, usually only manifest near and attack humans. Why on earth would they come after a little dog? I had to keep you safe, see. This necklace can help you to fight them."
 
     pov surprised "You want me to fight shadows?"
 
-    mathilda "It’s not that simple. Shadows are caused by the curse over the town. Break the curse, and they will disappear along with freeing everyone."
+    mathilda "It’s not that simple. Shadows are caused by the curse over the town. Break the curse, and they will disappear."
 
     pov confused "Curse?"
 
@@ -420,11 +415,11 @@ label start:
 
     pov angry "What?!"
 
-    mathilda sad pensive "I barely found someone to embody the vessel of Alice, I hadn’t gotten this far before."
+    mathilda sad pensive "This necklace was left to me by my sister. It's taken me a long time to figure out the nature of its power, and I'm not sure I know it all yet."
 
-    pov confused "Vessel of Alice?"
+    pov confused "You didn’t know it would transform me?"
 
-    mathilda stern "Yes, that’s what I had you transform into. Though, you are now just a normal girl. I believe to turn into its true form, you’d need to call on it."
+    mathilda stern "I knew of its power to transform, but I had tried it on countless creatures before you; this is the first time it has worked. Its true power is not meant for me, so I do not know all of its secrets. You will have to uncover the rest on your own."
 
     pov sad "This is so confusing and complicated."
 
@@ -436,8 +431,8 @@ label start:
 
     pov "I see."
 
-    mathilda -stern "Thankfully, an important person owes me a favor, thus allowing your enrollment. I sent the letter last week, you’ll be moved there shortly after we receive the acceptance letter."
-
+    mathilda -stern "Thankfully, the dean there owes me a favor, thus allowing your enrollment. I sent the letter last week, you’ll be moved there shortly after we receive the acceptance letter."
+    
     pov sad "..."
 
     # Section 2 Choice 2
@@ -497,8 +492,8 @@ label start:
 
     pov "I will."
 
-    mathilda stern "And keep your necklace on at all times. If it comes off you could transform back. Keep it under her shirt just in case to keep it from being grabbed."
-
+    mathilda stern "And keep your necklace on at all times. If it comes off you could transform back. Keep it under your shirt, just in case, to keep it from being grabbed."
+    
     n "I quickly tucked it under my shirt before giving a thumbs up."
     show mathilda happy at right
     show mc school happy at left
