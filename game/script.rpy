@@ -625,7 +625,7 @@ label s3c1o0:
     show mc school confused
     with dissolve
 
-    n "The hallway had been empty just like before making it easy to leave. A place like this I thought would have more security."
+    n "The hallway had been empty, just like before, making it easy to leave. A place like this I thought would have more security."
 
     # Background change: School Hallway
     scene hallway
