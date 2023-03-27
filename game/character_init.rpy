@@ -33,10 +33,11 @@ image dimitri surprised=im.FactorScale("images/characters/Dimitri_Hatter/surpris
 #Fabien LeBlanc
 image fabien neutral=im.FactorScale("images/characters/fabien_leblanc/neutral.png", 0.5)
 #Leveret LeBlanc
+image leveret neutral = im.FactorScale("images/characters/leveret_leblanc/neutral.png", 0.5)
 image leveret annoying=im.FactorScale("images/characters/leveret_leblanc/annoying.png", 0.5)
 image leveret happy=im.FactorScale("images/characters/leveret_leblanc/happy.png", 0.5)
 image leveret sad=im.FactorScale("images/characters/leveret_leblanc/sad.png", 0.5)
-image leveret surprise=im.FactorScale("images/characters/leveret_leblanc/surprise.png", 0.5)
+image leveret surprised=im.FactorScale("images/characters/leveret_leblanc/surprise.png", 0.5)
 #Mathilda Images
 image mathilda= im.FactorScale("images/characters/mathilda/neutral.png", 0.5)
 image mathilda happy=im.FactorScale("images/characters/mathilda/happy.png", 0.5)
