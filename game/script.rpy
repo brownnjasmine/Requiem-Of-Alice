@@ -354,7 +354,7 @@ label start:
     mathilda "Coming!"
 
     show mathilda at right
-    with slideright
+    with easeinright
 
     n "Soon enough, Mathilda was coming in with a bowl and tray. She set them down before taking the tightly gripped bell in my hand."
 
@@ -368,7 +368,7 @@ label start:
 
     # Background change: Breakfast with Mathilda CG
     scene breakfast cg
-    with fade
+    with dissolve
 
     mathilda "Looks like you’re a quick learner. I was afraid I might have to feed you myself for a while."
 
@@ -490,7 +490,7 @@ label start:
     show mathilda at right
     with dissolve
 
-    show mc school at left
+    show mc school neutral at left
     with dissolve
 
     mathilda "Write to me if you can, I want to know if you’re doing okay."
@@ -517,7 +517,7 @@ label start:
     show fabien neutral at right
     with dissolve
 
-    show mc school at left
+    show mc school neutral at left
     with dissolve
 
     fabien "Nice to meet you, I’m Fabien LeBlanc. You may call me Mr. LeBlanc."
@@ -536,7 +536,7 @@ label start:
     show fabien neutral at right
     with dissolve
 
-    show mc school at left
+    show mc school neutral at left
     with dissolve
 
 
@@ -620,7 +620,7 @@ label s3c1o0:
 
     show mc school confused
     with dissolve
-    
+
     n "The hallway had been empty just like before making it easy to leave. A place like this I thought would have more security."
 
     # Background change: School Hallway
