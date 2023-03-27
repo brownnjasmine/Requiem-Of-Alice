@@ -563,9 +563,11 @@ label s3c1Tail:
     
     # Background change: Cafeteria
     scene cafeteria
+    show mc school neutral
+    with dissolve
 
     n "I was able to navigate on my own to find the cafeteria. It was pretty and, like the rest of the school, huge. I walked up, receiving a hot plate of food. It looked delicious with a big steak, potatoes, and gravy. I had to keep myself from shoving my face to get a bite."
-
+    show mc school happy
     n "I resisted the urge and decided to go take a seat so I didn’t have to wait any longer to eat. I looked around for what looked like a suitable spot. There were two places. One that was near a group of girls and one by itself near a window."
 
     # Section 3 Choice 2
@@ -581,13 +583,17 @@ label s3c1Tail:
 label s3c2Tail:
         
     # Background change: MC Dorm Room
-    scene MC_Dorm_Room
+    scene mcs bedroom
+    with dissolve
+
+    show mc school neutral
+    with dissolve
 
     n "Today was a lot and there was more to expect. I just hoped I would have time between classes to try and figure out the whole saving the world thing. I got into my pajamas and tucked myself in. I figured a good night's sleep would help me think of something tomorrow. After all, there’s nothing I could do now. I turned off the light and drifted off to sleep."
 
     # Background change: Blank Room
-    scene Room_Blank
-
+    scene blank
+    with dissolve
     unknown "I am here to guide you."
 
     pov "?"
@@ -599,7 +605,10 @@ label s3c2Tail:
     n "I felt like I couldn’t move or speak. It was like being held in a warm dark blanket. Whoever was speaking felt safe even if unfamiliar."
 
     # Background change: MC Dorm Room
-    scene MC_Dorm_Room
+    scene mcs bedroom
+
+    show mc school neutral
+    with dissolve
 
     n "Soon enough I was awake again, awoken by a ringing and shaking of a small clock. I turned it off before getting up. This is where it begins. My new life as [povname] and as Alice."
 
@@ -624,31 +633,38 @@ label s3c1o0:
     n "The hallway had been empty just like before making it easy to leave. A place like this I thought would have more security."
 
     # Background change: School Hallway
-    scene Room_Hallway
+    scene hallway
+
+    show mc school neutral
 
     n "I thankfully was able to find the main building, but was starting to finally notice some people hanging about. Looks like most students were walking about or in class. I was curious what class would be like."
 
     n "I was almost to the library before someone in one of the many groups of students stopped me."
 
+    show mc school neutral at left
+    with dissolve
+
+    show tatianna neutral stern at right
+    with dissolve
     tatianna "Where do you think you’re going?"
 
-    pov "I’m going to the library."
+    pov school confused "I’m going to the library."
 
     n "I tried walking past, but she held out a long staff-like object to block me."
 
-    tatianna "Who do you think you are to just walk past me?! I didn’t give you permission to leave."
+    tatianna angry "Who do you think you are to just walk past me?! I didn’t give you permission to leave."
 
     n "Did I break some sort of school rule?"
 
-    pov "I need permission to go to the library?"
+    pov school angry "I need permission to go to the library?"
 
-    tatianna "If you think being a smart ass is going to work, you are very wrong. State your business and don’t try to leave until I tell you."
+    tatianna neutral stern "If you think being a smart ass is going to work, you are very wrong. State your business and don’t try to leave until I tell you."
 
-    pov "What’s a smart ass?"
+    pov school surprised "What’s a smart ass?"
 
     n "She looked more and more angry. This girl seemed like a firework, constantly wanting to go off."
 
-    tatianna "One of you, tell me who this is, so I can assign them detention."
+    tatianna angry "One of you, tell me who this is, so I can assign them detention."
 
     follow1 "I don’t know, I’ve never seen them before."
 
@@ -656,26 +672,36 @@ label s3c1o0:
 
     tatianna "Then who are you?"
 
-    pov "I’m [povname], I’m a new student and I would like to go to the library."
+    pov school neutral "I’m [povname], I’m a new student and I would like to go to the library."
 
     n "Her eyes narrowed. She looked me up and down before rubbing her eyes in irritation."
 
     $ tatianna_name = "Tatianna Rosehart"
-    tatianna "I’ll let you slide this time, but from now on when you’re talking to me, don’t leave until I give you permission. Not to mention you should know that I am Tatianna Rosehart, daughter of the king and soon to be Queen. You are expected to respect me from now on, got it?"
+    tatianna neutral stern "I’ll let you slide this time, but from now on when you’re talking to me, don’t leave until I give you permission. Not to mention you should know that I am Tatianna Rosehart, daughter of the king and soon to be Queen. You are expected to respect me from now on, got it?"
 
+    show mc school confused at left
     n "I really didn’t get what she said. I nodded anyway trying to just get to the library. She let me pass shortly afterwards. As I walked by people were peeking out at me from their social groups, but never said anything to me. It reminded me of groups of street dog gangs I’d avoid. This place is really weird."
 
     # Background change: Library
-    scene Room_Library
+    scene library
+    with dissolve
+
+    show mc school happy at left
+    with dissolve
 
     pov "Finally!"
 
     n "I made it! Now, what do I do…"
+    show mc school surprised at left
+    with dissolve
 
     n "I looked around and peeked at some book titles, but felt already very lost. I did, thankfully, know how to read. The problem is which book would I need to read?"
+    show leveret neutral at right
+    with dissolve
 
     levy "Excuse me?"
 
+    show mc school neutral at left
     n "Please don’t yell at me."
 
     levy "Er, you look a little lost. Can I help?"
@@ -694,21 +720,26 @@ label s3c1o0:
 
     n "Suddenly I was being shushed."
 
-    levy "What are you doing?!"
+    levy surprised "What are you doing?!"
 
+    show mc school confused at left
     n "I gave him a confused look."
 
     levy "Why do you need to know about curses?"
 
-    pov "Uh, I wanted to know more about the curse on this town. That is if you have anything."
+    pov school neutral "Uh, I wanted to know more about the curse on this town. That is if you have anything."
 
-    levy "Oh. Be careful when discussing that, okay? I think I know something."
+    levy neutral "Oh. Be careful when discussing that, okay? I think I know something."
+    hide leveret
+    with dissolve
 
     n "He went back into the shelves, finding a big red book before handing it over."
 
+    show leveret neutral at right
+    with dissolve
     levy "Here. It’s the town’s history. If there’s anything it would be here."
 
-    pov "Thanks!"
+    pov school happy "Thanks!"
 
     levy "Any reason why you wanna know about it?"
 
@@ -716,20 +747,24 @@ label s3c1o0:
 
     levy "Haha, if only."
 
+    show mc school confused at left
     n "I just stare at him. Was there a joke?"
 
-    levy "You’re serious? I mean good luck, but it’s a little insane to think you can fix this curse. I mean if the King can’t…"
+    levy sad "You’re serious? I mean good luck, but it’s a little insane to think you can fix this curse. I mean if the King can’t…"
 
     n "His voice trailed off before he cleared his throat."
 
-    levy "Well, enjoy your book"
+    levy happy "Well, enjoy your book"
 
-    pov "Thank you, uh…"
+    pov school neutral "Thank you, uh…"
 
     $ levy_name = "Leveret LeBlanc"
     levy "Leveret, Leveret LeBlanc. Some people just call me Levy, if that’s easier."
 
-    pov "Thank you, Leveret."
+    pov school happy "Thank you, Leveret."
+
+    hide leveret
+    with dissolve
 
     n "He went off somewhere to do whatever he was probably doing before he decided to help me. I decided to open the book and start reading. There were things about Royal families, wars, tea parties, and other things before I got bored. I would have to try and read more later as the giant clock in the courtyard could be heard in the distance. Time for dinner."
 
@@ -737,12 +772,19 @@ label s3c1o0:
 
 # Section 3 Choice 1 Option 1
 label s3c1o1:
+    show mc school neutral
+    with dissolve
 
     n "I decided getting some rest would be fine. Not like I’d miss anything before dinner."
 
     n "I tried to snooze but, a little later a knock came to my door. I decided to go answer it."
 
     n "At the door was a short and smiling girl with a gift in her hand. She shoved them into my hands before walking inside."
+    show mc school neutral at left
+    with dissolve
+
+    show mira happy at right
+    with dissolve
 
     mira "Hello, welcome! You’re the new student, right?"
 
@@ -753,15 +795,16 @@ label s3c1o1:
 
     pov "Thank you, I will probably need those."
 
-    mira "Your room looks so nice!"
+    mira happy "Your room looks so nice!"
 
     pov "Thank you?"
 
     mira "If you want some stuffed animals to brighten this place up, you can borrow some! Just make sure they’re tucked in for bed, of course."
 
-    pov "Uh, I’ll think about it."
+    pov school confused "Uh, I’ll think about it."
 
     mira "Well, I’m here if you need any help getting around or anything. I’ll be at the end of the hall in that room on the right. I’ll be off now, have fun moving in!"
+    hide mira
 
     n "She left as quickly as she had come. I took the box and placed it on my bed before opening it. Just pens, pencils, paper, and notebooks. I then set that aside to go and try and nap again. Waking up to the clock striking, soon enough it was dinner time."
 
@@ -769,6 +812,8 @@ label s3c1o1:
 
 # Section 3 Choice 2 Option 0
 label s3c2o0:
+    show mc school neutral at left
+    with dissolve
 
     n "I decided to try and go sit with some of my peers. There was a group of girls all chatting excitedly. I took a seat at the edge of their group and started to eat."
 
@@ -790,21 +835,22 @@ label s3c2o0:
 
     n "Cutest guy?"
 
-    pov "Who?"
+    pov school confused "Who?"
 
     girl3 "What do you mean who? Dimitri, of course!"
 
     girl2 "We all like him. I mean, who doesn’t?"
 
+    show mc school angry at left
     n "Maybe I should just start introducing myself as a new student, because I have no idea who they’re talking about."
 
-    pov "I’ve never seen them, but if you say so."
+    pov school neutral "I’ve never seen them, but if you say so."
 
     girl1 "He’s right there, look."
 
     n "She pointed on the other side of the room at a tall man in a hat. His hat was very small compared to his head, but it looked nice that way."
 
-    pov "He looks okay."
+    pov school confused "He looks okay."
 
     girl2 "Just okay?"
 
@@ -812,6 +858,7 @@ label s3c2o0:
 
     girl4 "Or they like women."
 
+    show mc school surprised at left
     n "What?"
 
     girl2 "Well if you like girls that’s fine."
@@ -822,40 +869,47 @@ label s3c2o0:
 
     girl4 "Yeah, we don’t judge."
 
-    pov "Okay, thank you?"
-
+    pov school confused "Okay, thank you?"
+    show mc school neutral at left
     n "They seemed pretty peachy and more friendly. I decided to just listen as they mentioned all the different things they like about Dimitri. Everyone talked about times they almost got to touch his hand or speak, but seemed like no one ever talked to him. It made me think if everyone avoided him this way, it would be lonely."
 
     jump s3c2Tail
 
 # Section 3 Choice 2 Option 1
 label s3c2o1:
-
+    show mc school neutral at left
+    with dissolve
     n "I decided to eat alone. I didn’t know anyone yet, so I figured being by myself would be okay. I happily chewed into some potatoes before I noticed someone had snuck up on me. I felt something fluffy touch my back and I flinched turning to see a person standing behind me."
 
-    pov "What are you doing?"
-
+    pov school confused "What are you doing?"
+    show mc school angry at left
+    with dissolve
     n "My eyes narrowed. They had pointed ears to go with that long tail. Reminded me of a cat. Were those cat ears? Could humans have different ears?"
+
+    show claudia neutral at right
+    with dissolve
 
     claudia "Sorry about that, kitty. I just wanted to introduce myself, but it looks like my tail beat me to it."
 
-    pov "Who are you?"
+    pov school neutral "Who are you?"
 
     $ claudia_name = "Claudia Catebury"
-    claudia "They call me many things, but most would say I go by Claudia or Claude. I’m a Catebury, but I don’t care much for the title."
+    claudia happy "They call me many things, but most would say I go by Claudia or Claude. I’m a Catebury, but I don’t care much for the title."
 
     pov "I’m [povname]. I’m a new student here."
 
     claudia "I figured as much, which is why I thought I’d come say hello~"
 
+    show mc school confused at left
     n "They seemed friendly, but I felt something odd about them. Not to mention I was distracted by the way their tail flicked back and forth. I missed my tail."
 
-    claudia "No offense, but do you have a dog or something? Your smell reminds me of a dog pound."
+    claudia neutral "No offense, but do you have a dog or something? Your smell reminds me of a dog pound."
 
     n "I can feel my dog instincts tell me to bite and bark at them, but I’m supposed to be human."
 
-    pov "Uh, I had a dog. Now that I moved here, I don’t get to be with them anymore."
+    pov school sad "Uh, I had a dog. Now that I moved here, I don’t get to be with them anymore."
 
+    show claudia surprised at right
     n "I tried to sell my sadness to try and make them not suspect I’m actually a dog. Maybe I should try to use that perfume Mathilda packed more often."
 
     n "I must have done a good job as their face softened."
@@ -864,7 +918,7 @@ label s3c2o1:
 
     n "I cocked my head confused."
 
-    pov "How?"
+    pov school surprised "How?"
 
     claudia "This!"
 
@@ -872,17 +926,19 @@ label s3c2o1:
 
     claudia "I don’t have anything for dogs, but it’s still a pet right? And it’s a token of my friendship and a good luck charm, if that helps."
 
-    pov "Thank you. It is really cute."
+    pov school happy "Thank you. It is really cute."
 
     n "I had no idea what to do with it, but it was nice to have friends. I also might need that good luck."
 
     claudia "Honestly, I remember being new and figured you could use a leg up. I’m your upperclassman so you should look to me for help. If someone is picking on you, don’t be afraid to call on me, okay?"
 
-    pov "I will, thank you."
+    pov school neutral "I will, thank you."
 
     n "I felt awkward not being able to give anything back. I tried to see what I had on me, but I only had pocket lint."
 
-    claudia "I gotta go, but don’t forget. See you around, kitty."
+    claudia happy "I gotta go, but don’t forget. See you around, kitty."
+    hide claudia
+    with dissolve
 
     n "They left probably back to their dorm. I decided to put the cham in my pocket and finish eating."
 
