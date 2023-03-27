@@ -866,7 +866,7 @@ label s3c2o0:
 
     pov school confused "Okay, thank you?"
     show mc school neutral at left
-    n "They seemed pretty peachy and more friendly. I decided to just listen as they mentioned all the different things they like about Dimitri. Everyone talked about times they almost got to touch his hand or speak, but seemed like no one ever talked to him. It made me think if everyone avoided him this way, it would be lonely."
+    n "They seemed pretty peachy and more friendly. I decided to just listen as they mentioned all the different things they like about Dimitri. Everyone talked about times they almost got to touch his hand or speak, but seemed like no one ever really talked to him. It made me think if everyone avoided him this way, it would be lonely."
 
     jump s3c2Tail
 
