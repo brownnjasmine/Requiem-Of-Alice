@@ -105,16 +105,21 @@ label start:
 
     mathilda -stern "Sorry, puppy, you can’t have chocolate. If you’re hungry, I have something that will be much better."
 
+    show mc dog
+
     n "You don’t know what would be better, but you sit patiently as she reaches for something on a high shelf."
 
-    mathilda "Here, some yummy and safe dog food."
+    mathilda happy "Here, some yummy and safe dog food."
 
+    show mc dog happy
     n "You see what looks like a couple small sausages. Your mouth waters before you give a quick sniff to check if it’s safe. You then happily tear into your meal."
 
-    mathilda "Glad you like it."
+    mathilda -happy "Glad you like it."
 
     n "You finish your meal with gusto before going to sit back on your pillow. The human had just been watching this whole time. She stares at you with great interest, as if you were the only thing in the room."
 
+    show mc dog
+    
     mathilda "All done?"
 
     n "You give a little nod as you lay. Now fed, you thought about why you were here. You know you didn’t have anyone you belonged to. The last thing you remember is digging through trash, actually. You also hadn’t even made a note that you understand this human and she seemed to understand you."
@@ -144,39 +149,41 @@ label start:
             n "You nod your head. She seems delighted and scoops you up from the pillow in her arms."
 
         "Give questioning look":
-
+            show mc dog confused
             n "You give her a look to try and portray your uneasy feeling."
 
             mathilda "I promise you won’t be harmed."
-
+            show mc dog
             n "You look at your feet mulling it over for a moment before nodding. She scoops you up from the pillow into her arms."
 
     n "You have a new view of the room from a better vantage point. It looks messy with how many books, crystals, plants, and other things are strewn about. You are soon placed on a chair on the other side of the room."
 
     mathilda "Stay here for one moment. I’ll be right back."
-
+    show mc dog hungry
     n "You sit and stay like a good dog. You hope she’ll give you a little pet for being good. Then again, you were unsure about this test. Most things you knew were about sitting, staying, and occasionally, playing dead. Your greedy tummy hoped she’d be back with a box of treats."
 
     n "It didn’t take long before she appeared back with a small delicate box. Your tail wags in excitement."
 
     mathilda "Don’t get too excited, this isn’t for treats."
-
+    show mc dog sad
     n "Your little head droops and your tail stops as your hopes are crushed. You do get a pat on the head with a scritch behind the ear. Seems like she doesn’t like seeing a pouty face."
-
+    show mc dog
     mathilda "Alright then, let’s begin shall we?"
 
     n "She opens the box and the necklace is inside. You give it a sniff before she lifts it to show it off. It hangs from a gold chain down to a big red gem at the end. You know humans love this stuff. Even you can appreciate that it sparkles and looks pretty."
 
-    mathilda "Be careful as this necklace is no ordinary necklace. It contains the love, blood, and betrayal of the life before it."
+    mathilda stern "Be careful as this necklace is no ordinary necklace. It contains the love, blood, and betrayal of the life before it."
 
     n "You are not really sure what that means, but the way she stares at the necklace with intensity, you know it must be important."
 
-    mathilda "What I plan to do is give this to you. I want to undo what has been done and I think you’ll be able to do it."
+    mathilda -stern "What I plan to do is give this to you. I want to undo what has been done and I think you’ll be able to do it."
 
+    show mc dog confused
     n "You tilt your head. She’s being really vague and also you’re a dog. A smart and adorable dog. But a dog."
 
     mathilda "I know how it sounds, but trust me. I’ve been working on this for a while. At worst, you’re not what I’m looking for and I’m happy to have a new friend. I have a feeling about this though."
 
+    show mc dog
     n "You figure that she knows what she’s talking about and at least you’ll give it a try."
 
     mathilda "Alright, I will put this on you. If I’m right something should happen. If not, I’ll take it off and get you a treat."
@@ -185,37 +192,58 @@ label start:
 
     n "The necklace slips over your head and you feel the weight on your neck. It dangles quite low, almost touching your feet. She backs away, staring at you intently. You close your eyes thinking something should happen. The most you feel is a little itchy."
 
+    scene blank
+    with fade
 
     
     ### -------------------- Section 2 -------------------- ###
     # Background change: Blank Room
-    scene Room_Blank
 
     mathilda "…"
 
     # Background change: Mysterious Room
-    scene Room_Mysterious
+    scene mathildas house
+    with dissolve
 
+    show mc dog
+    with dissolve
+
+    show mathilda at right
+    with dissolve
+
+    show mc dog sad
     n "You open your eyes and nothing has changed, the look on the human’s face is sad. You wish you could change it. The treat no longer sounded nice seeing how it made her so disappointed."
 
     n "That’s when the necklace starts to glow. It freaks you out a little bit. You see a smile start to creep on her face, so maybe that was supposed to happen?"
+    show mc dog confused
+    mathilda happy "It’s working!"
 
-    mathilda "It’s working!"
-
+    scene blank
+    with fade
     n "You feel horrible all over. The necklace seems to shrink…or wait, are you growing? You can’t tell as the glow is surrounding your very self. You squeeze your eyes shut trying to endure this and end up curling up. That does last long as you break the chair from your weight leaving you on the floor."
 
     mathilda "Doggie?"
 
     n "She sounds concerned, but you won’t stop holding your legs. Wait holding? You peek an eye open to see the glow is gone and so is all your fur."
 
-    pov "Gaaah!"
+    scene mathildas house
+    with fade
+
+    show mathilda at right
+    with dissolve
+
+    show mc at left
+    with dissolve
+
+    pov surprised "Gaaah!"
 
     mathilda "Wait, it’s okay! Calm down, I'm here."
 
     n "She grabs you, helping you sit up at least. She then wraps a blanket around your now hairless body."
 
     # Background change: Transformation CG
-    scene CG_Transformation
+    scene transformation cg
+    with fade
 
     mathilda "It worked! I know this will be very new, but I promise it will be worth it."
 
@@ -232,8 +260,14 @@ label start:
     n "You give a judgemental look before following her lead. Or trying to follow, your new legs are not as well balanced and you’re not sure what to do with your front legs."
 
     # Background change: Mysterious Room
-    scene Room_Mysterious
+    scene mathildas house
+    with dissolve
 
+    show mathilda happy at right
+    with dissolve
+
+    show mc at left
+    with dissolve
     n "She takes you and dresses you before letting you sit on a chair. She ties up what’s left of your hair into what she called a ‘pony tail’. Speaking of, you don’t have a tail. It made sitting easier, but balancing harder."
 
     # Section 2 Choice 1
@@ -244,7 +278,7 @@ label start:
         "Who are you?" if not menuS2C1Selected[0]:
 
             $ menuS2C1Selected[0] = True
-            pov "Who are you?"
+            pov confused "Who are you?"
 
             $ mathilda_name = "Mathilda"
             mathilda "Mathilda, I work with magic and potions."
@@ -255,7 +289,7 @@ label start:
         "Why did you change me?" if not menuS2C1Selected[1]:
 
             $ menuS2C1Selected[1] = True
-            pov "Why did you change me?"
+            pov confused "Why did you change me?"
 
             mathilda "The necklace needed a vessel. It contains a power that could save this world."
 
@@ -265,21 +299,22 @@ label start:
         "What is up with the necklace?" if not menuS2C1Selected[2]:
 
             $ menuS2C1Selected[2] = True
-            pov "What is up with the necklace?"
+            pov confused "What is up with the necklace?"
             
             mathilda "The necklace is embedded with power that I cannot possess. It chooses a wearer and they alone can wield the power to save us."
 
             jump menuS2C1Head
 
+    show mc neutral
     n "Even with my first questions answered, I only have more questions."
 
-    mathilda "If I may ask a question now, who are you?"
+    mathilda -happy "If I may ask a question now, who are you?"
 
-    pov "Who am I?"
+    pov sad "Who am I?"
 
     mathilda "Or at least, what should I call you?"
 
-    pov "Hm…"
+    pov -sad "Hm…"
 
     # Prompt the player to type in their name, default is Inui, max length is 32 characters
     python:
@@ -291,11 +326,11 @@ label start:
 
     pov "[povname]."
 
-    mathilda "Cute name. I think it suits you."
+    mathilda happy "Cute name. I think it suits you."
 
     n "I’m not sure, now that I think about it. The name felt familiar so I figured it was good enough."
 
-    mathilda "I’m sure this is a lot for one evening. Not to mention you will need to get used to this new body."
+    mathilda -happy "I’m sure this is a lot for one evening. Not to mention you will need to get used to this new body."
 
     n "I wanted to know more, but I’ll save it for later. In the meantime, I was moved to a bed to rest. My body still tingles all over."
 
@@ -304,16 +339,22 @@ label start:
     n "I nodded before going to sleep."
 
     # Background change: Blank Room
-    scene Room_Blank
+    scene blank
 
     n "My dreams felt familiar, but I couldn’t recognize anyone. It felt like a memory, but this memory was me as a human. As far as I remember, I had been a dog until this point. I was in a beautiful garden with someone else. It felt nostalgic."
 
     # Background change: Mysterious Room
-    scene Room_Mysterious
+    scene mathildas house
+    with dissolve
 
+    show mc at left
+    with dissolve
     n "The dream ended before the memory got any further. I woke up, instinctively shooting up to try to find the bell. These new paws felt weird. I was able to move them all differently and grab things. I practiced grabbing the blanket then reaching for the bell."
 
     mathilda "Coming!"
+
+    show mathilda at right
+    with slideright
 
     n "Soon enough, Mathilda was coming in with a bowl and tray. She set them down before taking the tightly gripped bell in my hand."
 
@@ -321,12 +362,13 @@ label start:
 
     n "I nodded."
 
-    mathilda "Don’t worry, I will help you learn everything you need."
+    mathilda happy "Don’t worry, I will help you learn everything you need."
 
     n "I was listening, but the smell of the bowl distracted me. Soon enough I grabbed the spoon and took a bite. A little sloppy, but delicious."
 
     # Background change: Breakfast with Mathilda CG
-    scene CG_Breakfast
+    scene breakfast cg
+    with fade
 
     mathilda "Looks like you’re a quick learner. I was afraid I might have to feed you myself for a while."
 
@@ -335,7 +377,13 @@ label start:
 
     # Time skip fade
     # Background change: Mysterious Room
-    scene Room_Mysterious
+    scene mathildas house
+    with dissolve
+
+    show mc at left
+    with dissolve
+
+    show mathilda at right
     with dissolve
 
     n "Soon enough, I was walking, talking, and acting like a human. Mathilda was patient, but it only took a couple weeks. I figured now I was human, I should ask what she wanted me to do. We were having breakfast and figured it was better now than to keep waiting."
@@ -348,49 +396,49 @@ label start:
 
     n "She was in the middle of sipping tea before pausing at the question. She set her cup down gently before a sigh."
 
-    mathilda "I almost forgot. That’s right. You were such nice company, I forgot that you can’t stay here…"
+    mathilda sad resigned "I almost forgot. That’s right. You were such nice company, I forgot that you can’t stay here…"
 
-    pov "Why? Where am I going?"
+    pov confused "Why? Where am I going?"
 
-    mathilda "It’s time you let you know everything. Settle in, this might take a while."
+    mathilda stern "It’s time you let you know everything. Settle in, this might take a while."
 
     n "I felt nervous, but tried to get comfortable."
 
     mathilda "This world is in trouble. In fact, the reason you were injured is related to this. You were attacked as a small dog and I helped you, of course. But, you were attacked by shadows. They tend only to manifest near and attack humans. Which is why you stood out to me. This necklace can help fight them."
 
-    pov "You want me to fight shadows?"
+    pov surprised "You want me to fight shadows?"
 
     mathilda "It’s not that simple. Shadows are caused by the curse over the town. Break the curse, and they will disappear along with freeing everyone."
 
-    pov "Curse?"
+    pov confused "Curse?"
 
-    mathilda "I know very little about the actual curse, but I know it was cast when she disappeared. That necklace brings her spirit back, allowing you the power to fight shadows and break this curse."
+    mathilda sad pensive "I know very little about the actual curse, but I know it was cast when she disappeared. That necklace brings her spirit back, allowing you the power to fight shadows and break this curse."
 
-    pov "How do I break the curse?"
+    pov -confused "How do I break the curse?"
 
-    mathilda "...I don’t know"
+    mathilda stern "...I don’t know"
 
-    pov "What?!"
+    pov angry "What?!"
 
-    mathilda "I barely found someone to embody the vessel of Alice, I hadn’t gotten this far before."
+    mathilda sad pensive "I barely found someone to embody the vessel of Alice, I hadn’t gotten this far before."
 
-    pov "Vessel of Alice?"
+    pov confused "Vessel of Alice?"
 
-    mathilda "Yes, that’s what I had you transform into. Though, you are now just a normal girl. I believe to turn into its true form, you’d need to call on it."
+    mathilda stern "Yes, that’s what I had you transform into. Though, you are now just a normal girl. I believe to turn into its true form, you’d need to call on it."
 
-    pov "This is so confusing and complicated."
+    pov sad "This is so confusing and complicated."
 
     mathilda "Believe me, this wasn’t easy to try and learn. Not to mention you’ll soon be moved to the academy."
 
-    pov "Academy? You never mentioned that before."
+    pov confused "Academy? You never mentioned that before."
 
     mathilda "I had to help you just walk first. Yes, you will be attending the academy in order to figure out how to break the curse. If anywhere has the info you need, it would be there. It has the royal library, but you have to be a student or staff member to access it."
 
     pov "I see."
 
-    mathilda "Thankfully, an important person owes me a favor, thus allowing your enrollment. I sent the letter last week, you’ll be moved there shortly after we receive the acceptance letter."
+    mathilda -stern "Thankfully, an important person owes me a favor, thus allowing your enrollment. I sent the letter last week, you’ll be moved there shortly after we receive the acceptance letter."
 
-    pov "..."
+    pov sad "..."
 
     # Section 2 Choice 2
     menu:
@@ -398,7 +446,7 @@ label start:
 
         "Say you’re happy to go to school":
 
-            pov "I can’t wait to see the school."
+            pov happy"I can’t wait to see the school."
 
             mathilda "I think you’ll like it. It would be good for you to have friends your age."
 
@@ -408,24 +456,25 @@ label start:
 
             n "She seems to pause, the look on her face a little hard to read."
 
-            mathilda "I’ll miss you, [povname]."
+            mathilda sad pensive "I’ll miss you, [povname]."
 
-            pov "I’ll miss you too."
+            pov sad "I’ll miss you too."
 
             # Background change: hug with Mathilda CG
-            scene CG_Hug
+            scene hug cg
 
         "Say you’ll miss her":
 
             pov "I’ll miss you"
 
             # Background change: hug with Mathilda CG
-            scene CG_Hug
+            scene hug cg
 
             mathilda "Oh, I’ll miss you too"
 
             n "She went over to give me a hug. I knew even if I wasn’t sure about what she wanted, I wanted to do it for her."
 
+    scene blank
     n "We talked some more, the tension in the air now gone. I was just trying to enjoy what time I had left with her before I would have to leave."
 
 
@@ -433,43 +482,70 @@ label start:
     ### -------------------- Section 3 -------------------- ###
     # Time skip fade
     # Background change: School Enterance
-    scene School_Enterance
+    scene school entrance
     with dissolve
         
     n "Soon enough, the letter had arrived and I was walking with a small bag of belongings to my new home."
+
+    show mathilda at right
+    with dissolve
+
+    show mc school at left
+    with dissolve
 
     mathilda "Write to me if you can, I want to know if you’re doing okay."
 
     pov "I will."
 
-    mathilda "And keep your necklace on at all times. If it comes off you could transform back. Keep it under her shirt just in case to keep it from being grabbed."
+    mathilda stern "And keep your necklace on at all times. If it comes off you could transform back. Keep it under her shirt just in case to keep it from being grabbed."
 
     n "I quickly tucked it under my shirt before giving a thumbs up."
+    show mathilda happy at right
+    show mc school happy at left
 
     n "We said our goodbyes at the gates before I was escorted to my dorm."
 
     # Background change: Spade Dorm Entrance
-    scene Spade_Dorms
+    scene spade dorms
+    with dissolve
+
+    show fabien neutral
+    with dissolve
 
     n "A man was there who walked in front to guide me. He seemed friendly, but I was sort of distracted by his appearance."
 
+    show fabien neutral at right
+    with dissolve
+
+    show mc school at left
+    with dissolve
+
     fabien "Nice to meet you, I’m Fabien LeBlanc. You may call me Mr. LeBlanc."
+    
+    show mc school confused at left
 
     n "I was staring at his ears. Are those rabbit ears? Isn’t this a human school? He looked like a teacher, so I kept the thought to myself."
 
-    pov "Nice to meet you. My name is [povname]."
+    pov school neutral "Nice to meet you. My name is [povname]."
 
     n "He nodded before heading inside. I followed behind with my small bag."
 
     # Background change: Spade Dorm Hallway
-    scene Spade_Dorm_Hallway
+    scene spade dorm hallway
+
+    show fabien neutral at right
+    with dissolve
+
+    show mc school at left
+    with dissolve
+
 
     fabien "This is your room. This is a Co-Ed dorm, so visiting other dorms is only allowed between Noon and Six. Obviously, curfew at eight. This is your schedule and a map to help you find your way around. The key to your dorm should be inside. Dinner tonight will be at six, don’t be late."
 
     n "He then turned and left as I took a look at the map. This place was huge, with many hallways and multiple buildings. I just hoped I wouldn’t get lost."
 
     # Background change: MC Dorm Room
-    scene MC_Dorm_Room
+    scene mcs bedroom
 
     n "I unpacked what little Mathilda was able to give me. I laid on the bed and it was soft enough. I figured I could either wait in my room until dinner or go explore."
 
@@ -486,7 +562,7 @@ label start:
 label s3c1Tail:
     
     # Background change: Cafeteria
-    scene Room_Cafeteria
+    scene cafeteria
 
     n "I was able to navigate on my own to find the cafeteria. It was pretty and, like the rest of the school, huge. I walked up, receiving a hot plate of food. It looked delicious with a big steak, potatoes, and gravy. I had to keep myself from shoving my face to get a bite."
 
@@ -540,8 +616,11 @@ label s3c1o0:
     n "I decided waiting around wasn’t going to help me save the world. I took another look at the map and decided to go see the library. Matilda had said that’s where I would look for information on how to break the curse."
 
     # Background change: Spade Dorm Hallway
-    scene Spade_Dorm_Hallway
+    scene spade dorm hallway
 
+    show mc school confused
+    with dissolve
+    
     n "The hallway had been empty just like before making it easy to leave. A place like this I thought would have more security."
 
     # Background change: School Hallway

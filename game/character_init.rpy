@@ -6,12 +6,12 @@ image mc dog happy=im.FactorScale("images/characters/inui/dog_hungry_happy.png",
 image mc dog hungry=im.FactorScale("images/characters/inui/dog_hungry_happy.png", 0.5)
 image mc dog confused=im.FactorScale("images/characters/inui/dog_confused.png", 0.5)
 image mc dog sad=im.FactorScale("images/characters/inui/dog_sad.png", 0.5)
-image mc home angry=im.FactorScale("images/characters/inui/home_angry.png", 0.5)
-image mc home confused=im.FactorScale("images/characters/inui/home_confused.png", 0.5)
-image mc home happy=im.FactorScale("images/characters/inui/home_happy.png", 0.5)
-image mc home neutral=im.FactorScale("images/characters/inui/home_neutral.png", 0.5)
-image mc home sad=im.FactorScale("images/characters/inui/home_sad.png", 0.5)
-image mc home surprised=im.FactorScale("images/characters/inui/home_surprised.png", 0.5)
+image mc angry=im.FactorScale("images/characters/inui/home_angry.png", 0.5)
+image mc confused=im.FactorScale("images/characters/inui/home_confused.png", 0.5)
+image mc happy=im.FactorScale("images/characters/inui/home_happy.png", 0.5)
+image mc neutral=im.FactorScale("images/characters/inui/home_neutral.png", 0.5)
+image mc sad=im.FactorScale("images/characters/inui/home_sad.png", 0.5)
+image mc surprised=im.FactorScale("images/characters/inui/home_surprised.png", 0.5)
 image mc school angry=im.FactorScale("images/characters/inui/school_angry.png", 0.5)
 image mc school confused=im.FactorScale("images/characters/inui/school_confused.png", 0.5)
 image mc school happy=im.FactorScale("images/characters/inui/school_happy.png", 0.5)
@@ -66,6 +66,11 @@ image school entrance= "images/backgrounds/school_entrance_.jpg"
 image spade dorm hallway= "images/backgrounds/spade_dorm_hallway.jpg"
 image spade dorms= "images/backgrounds/spade_dorms.jpg"
 image tea club= "images/backgrounds/tea_club.jpg"
+
+#Bringing in CGs
+image transformation cg = "images/cgs/transformation_cg.jpg"
+image hug cg = "images/cgs/hug_cg.jpg"
+image breakfast cg = "images/cgs/breakfast_cg.jpg"
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.

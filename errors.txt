@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 100: expected statement.
-    mathilda stern
-                  ^
+File "game/script.rpy", line 264: expected statement.
+    dissolve
+            ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Mar 18 20:03:22 2023
+Sat Mar 25 18:08:25 2023
