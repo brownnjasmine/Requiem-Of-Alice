@@ -1,55 +1,149 @@
 #Character Images Start
 #MC Images
-image mc= im.FactorScale("images/characters/inui/home_neutral.png", 0.5)
-image mc dog= im.FactorScale("images/characters/inui/dog_neutral.png", 0.5)
-image mc dog happy=im.FactorScale("images/characters/inui/dog_hungry_happy.png", 0.5)
-image mc dog hungry=im.FactorScale("images/characters/inui/dog_hungry_happy.png", 0.5)
-image mc dog confused=im.FactorScale("images/characters/inui/dog_confused.png", 0.5)
-image mc dog sad=im.FactorScale("images/characters/inui/dog_sad.png", 0.5)
-image mc angry=im.FactorScale("images/characters/inui/home_angry.png", 0.5)
-image mc confused=im.FactorScale("images/characters/inui/home_confused.png", 0.5)
-image mc happy=im.FactorScale("images/characters/inui/home_happy.png", 0.5)
-image mc neutral=im.FactorScale("images/characters/inui/home_neutral.png", 0.5)
-image mc sad=im.FactorScale("images/characters/inui/home_sad.png", 0.5)
-image mc surprised=im.FactorScale("images/characters/inui/home_surprised.png", 0.5)
-image mc school angry=im.FactorScale("images/characters/inui/school_angry.png", 0.5)
-image mc school confused=im.FactorScale("images/characters/inui/school_confused.png", 0.5)
-image mc school happy=im.FactorScale("images/characters/inui/school_happy.png", 0.5)
-image mc school neutral=im.FactorScale("images/characters/inui/school_neutral.png", 0.5)
-image mc school sad=im.FactorScale("images/characters/inui/school_sad.png", 0.5)
-image mc school surprised=im.FactorScale("images/characters/inui/school_surprised.png", 0.5)
+
+image mc neutral:
+    "images/characters/inui/home_neutral.png"
+    zoom 0.5
+image mc dog:
+    "images/characters/inui/dog_neutral.png"
+    zoom 0.5
+
+#image mc= im.FactorScale("images/characters/inui/home_neutral.png" zoom 0.0
+#image mc dog= im.FactorScale("images/characters/inui/dog_neutral.png" zoom 0.0
+image mc dog happy:
+    "images/characters/inui/dog_hungry_happy.png"
+    zoom 0.5
+image mc dog hungry:
+    "images/characters/inui/dog_hungry_happy.png"
+    zoom 0.5
+image mc dog confused:
+    "images/characters/inui/dog_confused.png"
+    zoom 0.5
+image mc dog sad:
+    "images/characters/inui/dog_sad.png"
+    zoom 0.5
+image mc angry:
+    "images/characters/inui/home_angry.png"
+    zoom 0.5
+image mc confused:
+    "images/characters/inui/home_confused.png"
+    zoom 0.5
+image mc happy:
+    "images/characters/inui/home_happy.png"
+    zoom 0.5
+image mc neutral:
+    "images/characters/inui/home_neutral.png"
+    zoom 0.5
+image mc sad:
+    "images/characters/inui/home_sad.png"
+    zoom 0.5
+image mc surprised:
+    "images/characters/inui/home_surprised.png"
+    zoom 0.5
+image mc school angry:
+    "images/characters/inui/school_angry.png"
+    zoom 0.5
+image mc school confused:
+    "images/characters/inui/school_confused.png"
+    zoom 0.5
+image mc school happy:
+    "images/characters/inui/school_happy.png"
+    zoom 0.5
+image mc school neutral:
+    "images/characters/inui/school_neutral.png"
+    zoom 0.5
+image mc school sad:
+    "images/characters/inui/school_sad.png"
+    zoom 0.5
+image mc school surprised:
+    "images/characters/inui/school_surprised.png"
+    zoom 0.5
 
 #Claudia Catebury
-image claudia angry=im.FactorScale("images/characters/claudia_catebury/angry.png", 0.5)
-image claudia annoyed=im.FactorScale("images/characters/claudia_catebury/annoyed.png", 0.5)
-image claudia happy=im.FactorScale("images/characters/claudia_catebury/happy.png", 0.5)
-image claudia neutral=im.FactorScale("images/characters/claudia_catebury/neutral_smug.png", 0.5)
-image claudia surprised=im.FactorScale("images/characters/claudia_catebury/surprised.png", 0.5)
+image claudia angry:
+    "images/characters/claudia_catebury/angry.png"
+    zoom 0.5
+image claudia annoyed:
+    "images/characters/claudia_catebury/annoyed.png" 
+    zoom 0.5
+image claudia happy:
+    "images/characters/claudia_catebury/happy.png" 
+    zoom 0.5
+image claudia neutral:
+    "images/characters/claudia_catebury/neutral_smug.png" 
+    zoom 0.5
+image claudia surprised:
+    "images/characters/claudia_catebury/surprised.png" 
+    zoom 0.5
+
 #Dimitri Hatter
-image dimitri neutral=im.FactorScale("images/characters/Dimitri_Hatter/neutral.png", 0.5)
-image dimitri sad disappointed=im.FactorScale("images/characters/Dimitri_Hatter/sad_disappointed.png", 0.5)
-image dimitri sad pensive=im.FactorScale("images/characters/Dimitri_Hatter/sad_pensive.png", 0.5)
-image dimitri surprised=im.FactorScale("images/characters/Dimitri_Hatter/surprised.png", 0.5)
+image dimitri neutral:
+    "images/characters/Dimitri_Hatter/neutral.png" 
+    zoom 0.5
+image dimitri sad disappointed:
+    "images/characters/Dimitri_Hatter/sad_disappointed.png" 
+    zoom 0.5
+image dimitri sad pensive:
+    "images/characters/Dimitri_Hatter/sad_pensive.png" 
+    zoom 0.5
+image dimitri surprised:
+    "images/characters/Dimitri_Hatter/surprised.png" 
+    zoom 0.5
+
 #Fabien LeBlanc
-image fabien neutral=im.FactorScale("images/characters/fabien_leblanc/neutral.png", 0.5)
+image fabien neutral:
+    "images/characters/fabien_leblanc/neutral.png" 
+    zoom 0.5
+
 #Leveret LeBlanc
-image leveret neutral = im.FactorScale("images/characters/leveret_leblanc/neutral.png", 0.5)
-image leveret annoying=im.FactorScale("images/characters/leveret_leblanc/annoying.png", 0.5)
-image leveret happy=im.FactorScale("images/characters/leveret_leblanc/happy.png", 0.5)
-image leveret sad=im.FactorScale("images/characters/leveret_leblanc/sad.png", 0.5)
-image leveret surprised=im.FactorScale("images/characters/leveret_leblanc/surprise.png", 0.5)
+image leveret neutral:
+    "images/characters/leveret_leblanc/neutral.png" 
+    zoom 0.5
+image leveret annoying:
+    "images/characters/leveret_leblanc/annoying.png" 
+    zoom 0.5
+image leveret happy:
+    "images/characters/leveret_leblanc/happy.png" 
+    zoom 0.5
+image leveret sad:
+    "images/characters/leveret_leblanc/sad.png" 
+    zoom 0.5
+image leveret surprised:
+    "images/characters/leveret_leblanc/surprise.png" 
+    zoom 0.5
+
 #Mathilda Images
-image mathilda= im.FactorScale("images/characters/mathilda/neutral.png", 0.5)
-image mathilda happy=im.FactorScale("images/characters/mathilda/happy.png", 0.5)
-image mathilda sad pensive=im.FactorScale("images/characters/mathilda/sad_pensive.png", 0.5)
-image mathilda sad resigned=im.FactorScale("images/characters/mathilda/sad_resigned.png", 0.5)
-image mathilda stern=im.FactorScale("images/characters/mathilda/stern.png", 0.5)
+image mathilda:
+    "images/characters/mathilda/neutral.png" 
+    zoom 0.5
+image mathilda happy:
+    "images/characters/mathilda/happy.png" 
+    zoom 0.5
+image mathilda sad pensive:
+    "images/characters/mathilda/sad_pensive.png" 
+    zoom 0.5
+image mathilda sad resigned:
+    "images/characters/mathilda/sad_resigned.png" 
+    zoom 0.5
+image mathilda stern:
+    "images/characters/mathilda/stern.png" 
+    zoom 0.5
+
 #Mira Shelbrooke
-image mira happy=im.FactorScale("images/characters/mira_shelbrooke/happy.png", 0.5)
-image mira neutral=im.FactorScale("images/characters/mira_shelbrooke/neutral.png", 0.5)
+image mira happy:
+    "images/characters/mira_shelbrooke/happy.png" 
+    zoom 0.5
+image mira neutral:
+    "images/characters/mira_shelbrooke/neutral.png" 
+    zoom 0.5
+
 #Tatianna Rosehart
-image tatianna angry=im.FactorScale("images/characters/tatianna_rosehart/angry.png", 0.5)
-image tatianna neutral stern=im.FactorScale("images/characters/tatianna_rosehart/neutral_stern.png", 0.5)
+image tatianna angry:
+    "images/characters/tatianna_rosehart/angry.png" 
+    zoom 0.5
+image tatianna neutral stern:
+    "images/characters/tatianna_rosehart/neutral_stern.png" 
+    zoom 0.5
 
 
 #background images start

@@ -10,6 +10,10 @@ label start:
 
     # Initialize variables
 
+    #Shift camera up
+    camera:
+        yoffset 2.0
+
     $ mathilda_name = "Unknown Woman"
     $ levy_name = "Bunny Boy"
     $ mira_name = "Cheery Girl"
