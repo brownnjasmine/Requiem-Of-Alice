@@ -63,7 +63,8 @@ label start:
 
     pov dog -sad "*Squeak*"
 
-    n "Your ears perk up at a creak/squeak, followed by footsteps. Someone is coming! At first you are happy, since that someone could open up your treat, but then you realize you have no idea whether this person is friendly or not. You grab your snack and sneak under the table to see who's coming."
+    n "Your ears perk up at a creak/squeak, followed by footsteps. Someone is coming! At first you are happy, since that someone could open up your treat, but then you realize you have no idea whether this person is friendly or not."
+    n "You grab your snack and sneak under the table to see who's coming."
 
     hide mc dog
     with dissolve
@@ -133,7 +134,8 @@ label start:
 
     mathilda "First, I found you and was letting you heal from your accident."
 
-    n "She gestures to your hind leg. It feels funny, but you hadn't noticed anything else wrong with it. That, and you can't turn properly to get a good look. You can see something on it that looks like a sock. You are overwhelmed by the urge to start tearing it off, but not while she’s watching."
+    n "She gestures to your hind leg. It feels funny, but you hadn't noticed anything else wrong with it. That, and you can't turn properly to get a good look. You can see something on it that looks like a sock."
+    n "You are overwhelmed by the urge to start tearing it off, but not while she’s watching."
 
     mathilda "I’m happy to see you recovering quickly. I think you’ve noticed you’re not an ordinary little dog, are you?"
 
@@ -159,7 +161,8 @@ label start:
 
     mathilda "Stay here for one moment. I’ll be right back."
     show mc dog hungry
-    n "You sit and stay like a good dog. You hope she’ll give you a little pet for being good. Then again, you were unsure about this test. Most things you knew were about sitting, staying, and occasionally, playing dead. Your greedy tummy hoped she’d be back with a box of treats."
+    n "You sit and stay like a good dog. You hope she’ll give you a little pet for being good. Then again, you were unsure about this test. Most things you knew were about sitting, staying, and occasionally, playing dead."
+    n "Your greedy tummy hoped she’d be back with a box of treats."
 
     n "It doesn't take long for her to reappear with a small, delicate box. Your tail wags in excitement."
 
@@ -219,7 +222,8 @@ label start:
 
     scene blank
     with fade
-    n "You feel horrible all over. The necklace starts to shrink… or wait, are you growing? You can’t tell; the glow surrounds you. You squeeze your eyes shut, curling into a ball, trying anything to endure this. You hear the chair creak before it breaks apart beneath you, and sprawl out onto the floor."
+    n "You feel horrible all over. The necklace starts to shrink… or wait, are you growing? You can’t tell; the glow surrounds you. You squeeze your eyes shut, curling into a ball, trying anything to endure this."
+    n "You hear the chair creak before it breaks apart beneath you, and sprawl out onto the floor."
 
     mathilda "Doggie?"
 
@@ -385,7 +389,8 @@ label start:
     show mathilda at right
     with dissolve
 
-    n "Soon enough, I was walking, talking, and acting like a human. Mathilda was patient, but it only took a couple weeks. I figured that, now I was human, I should ask what she wanted me to do. As we were having breakfast, I decided it was better now than to keep waiting."
+    n "Soon enough, I was walking, talking, and acting like a human. Mathilda was patient, but it only took a couple weeks. I figured that, now I was human, I should ask what she wanted me to do."
+    n "As we were having breakfast, I decided it was better now than to keep waiting."
 
     pov "Hey, can I ask a question?"
 
@@ -403,7 +408,8 @@ label start:
 
     n "I felt nervous, but tried to get comfortable."
 
-    mathilda "The world is in jeopardy. You have encountered this danger yourself first hand, when you were hurt. When I found you, you were being attacked by shadows. Shadows, you see, usually only manifest near and attack humans. Why on earth would they come after a little dog? I had to keep you safe, see. This necklace can help you to fight them."
+    mathilda "The world is in jeopardy. You have encountered this danger yourself first hand, when you were hurt. When I found you, you were being attacked by shadows. Shadows, you see, usually only manifest near and attack humans."
+    mathilda "Why on earth would they come after a little dog? I had to keep you safe, see. This necklace can help you to fight them."
 
     pov surprised "You want me to fight shadows?"
 
@@ -539,7 +545,8 @@ label start:
     with dissolve
 
 
-    fabien "This is your room. This is a Co-Ed dorm, so visiting other dorms is only allowed between Noon and Six. Obviously, curfew at eight. This is your schedule and a map to help you find your way around. The key to your dorm should be inside. Dinner tonight will be at six, don’t be late."
+    fabien "This is your room. This is a Co-Ed dorm, so visiting other dorms is only allowed between Noon and Six. Obviously, curfew at eight. This is your schedule and a map to help you find your way around. The key to your dorm should be inside."
+    fabien "Dinner tonight will be at six, don’t be late."
 
     n "He then turned and left as I took a look at the map. This place was huge, with many hallways and multiple buildings. I just hoped I wouldn’t get lost."
 
@@ -565,7 +572,8 @@ label s3c1Tail:
     show mc school neutral
     with dissolve
 
-    n "I was able to navigate on my own to find the cafeteria. It was pretty and, like the rest of the school, huge. I walked up, receiving a hot plate of food. It looked delicious with a big steak, potatoes, and gravy. I had to keep myself from shoving my face to get a bite."
+    n "I was able to navigate on my own to find the cafeteria. It was pretty and, like the rest of the school, huge. I walked up, receiving a hot plate of food. It looked delicious with a big steak, potatoes, and gravy."
+    n "I had to keep myself from shoving my face to get a bite."
     show mc school happy
     n "I resisted the urge and decided to go take a seat so I didn’t have to wait any longer to eat. I looked around for what looked like a suitable spot. There were two places. One that was near a group of girls and one by itself near a window."
 
@@ -588,7 +596,8 @@ label s3c2Tail:
     show mc school neutral
     with dissolve
 
-    n "Today was a lot and there was more to expect. I just hoped I would have time between classes to try and figure out the whole saving the world thing. I got into my pajamas and tucked myself in. I figured a good night's sleep would help me think of something tomorrow. After all, there’s nothing I could do now. I turned off the light and drifted off to sleep."
+    n "Today was a lot and there was more to expect. I just hoped I would have time between classes to try and figure out the whole saving the world thing."
+    n "I got into my pajamas and tucked myself in. I figured a good night's sleep would help me think of something tomorrow. After all, there’s nothing I could do now. I turned off the light and drifted off to sleep."
 
     # Background change: Blank Room
     scene blank
@@ -676,10 +685,12 @@ label s3c1o0:
     n "Her eyes narrowed. She looked me up and down before rubbing her eyes in irritation."
 
     $ tatianna_name = "Tatianna Rosehart"
-    tatianna neutral stern "I’ll let you slide this time, but from now on when you’re talking to me, don’t leave until I give you permission. Not to mention you should know that I am Tatianna Rosehart, daughter of the king and soon to be Queen. You are expected to respect me from now on, got it?"
+    tatianna neutral stern "I’ll let you slide this time, but from now on when you’re talking to me, don’t leave until I give you permission. Not to mention you should know that I am Tatianna Rosehart, daughter of the king and soon to be Queen."
+    tatianna "You are expected to respect me from now on, got it?"
 
     show mc school confused at left
-    n "I really didn’t get what she said. I nodded anyway trying to just get to the library. She let me pass shortly afterwards. As I walked by people were peeking out at me from their social groups, but never said anything to me. It reminded me of groups of street dog gangs I’d avoid. This place is really weird."
+    n "I really didn’t get what she said. I nodded anyway trying to just get to the library. She let me pass shortly afterwards. As I walked by people were peeking out at me from their social groups, but never said anything to me."
+    n "It reminded me of groups of street dog gangs I’d avoid. This place is really weird."
 
     # Background change: Library
     scene library
@@ -765,7 +776,8 @@ label s3c1o0:
     hide leveret
     with dissolve
 
-    n "He went off somewhere to do whatever he was probably doing before he decided to help me. I decided to open the book and start reading. There were things about Royal families, wars, tea parties, and other things before I got bored. I would have to try and read more later as the giant clock in the courtyard could be heard in the distance. Time for dinner."
+    n "He went off somewhere to do whatever he was probably doing before he decided to help me. I decided to open the book and start reading. There were things about Royal families, wars, tea parties, and other things before I got bored."
+    n "I would have to try and read more later as the giant clock in the courtyard could be heard in the distance. Time for dinner."
 
     jump s3c1Tail
 
@@ -870,7 +882,8 @@ label s3c2o0:
 
     pov school confused "Okay, thank you?"
     show mc school neutral at left
-    n "They seemed pretty peachy and more friendly. I decided to just listen as they mentioned all the different things they like about Dimitri. Everyone talked about times they almost got to touch his hand or speak, but seemed like no one ever really talked to him. It made me think if everyone avoided him this way, it would be lonely."
+    n "They seemed pretty peachy and more friendly. I decided to just listen as they mentioned all the different things they like about Dimitri. Everyone talked about times they almost got to touch his hand or speak, but seemed like no one ever really talked to him."
+    n "It made me think if everyone avoided him this way, it would be lonely."
 
     jump s3c2Tail
 
@@ -878,7 +891,8 @@ label s3c2o0:
 label s3c2o1:
     show mc school neutral at left
     with dissolve
-    n "I decided to eat alone. I didn’t know anyone yet, so I figured being by myself would be okay. I happily chewed into some potatoes before I noticed someone had snuck up on me. I felt something fluffy touch my back and I flinched turning to see a person standing behind me."
+    n "I decided to eat alone. I didn’t know anyone yet, so I figured being by myself would be okay. I happily chewed into some potatoes before I noticed someone had snuck up on me."
+    n "I felt something fluffy touch my back and I flinched turning to see a person standing behind me."
 
     pov school confused "What are you doing?"
     show mc school angry at left
