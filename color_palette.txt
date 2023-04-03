@@ -1,0 +1,8 @@
+#A01D16 - dark red
+#E0564F - salmon
+#FEDAD9 - really light pink
+#E7ACAB -light pink
+#131C32 - deep dark blue
+#222427 - darkest gray 
+#686868 - gray 
+#D0D3D7 - light cool gray
