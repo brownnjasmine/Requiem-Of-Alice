@@ -23,7 +23,7 @@ init python:
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#A01D16'
+define gui.accent_color = '#131C32'
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#D0D3D7'
@@ -37,7 +37,7 @@ define gui.hover_color = '#A01D16'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#686868'
+define gui.selected_color = '#A01D16'
 
 ## The color used for a text button when it cannot be selected.
 define gui.insensitive_color = '#FEDAD9'
@@ -55,13 +55,13 @@ define gui.interface_text_color = '#131C32'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "font/EBGaramond-VariableFont_wght.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "font/EBGaramond-Italic-VariableFont_wght.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "font/EBGaramond-VariableFont_wght.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
@@ -109,16 +109,16 @@ define gui.name_ypos = 0
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
-define gui.name_xalign = 0.0
+define gui.name_xalign = 0.5
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
-define gui.namebox_width = None
-define gui.namebox_height = None
+define gui.namebox_width =  500
+define gui.namebox_height = 85
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(50, 5, 5, 5)
 
 ## If True, the background of the namebox will be tiled, if False, the
 ## background of the namebox will be scaled.

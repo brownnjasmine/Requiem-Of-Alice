@@ -1,9 +1,10 @@
 #Character Images Start
 #MC Images
 
-image mc neutral:
+image mc:
     "images/characters/inui/home_neutral.png"
     zoom 0.5
+    
 image mc dog:
     "images/characters/inui/dog_neutral.png"
     zoom 0.5
