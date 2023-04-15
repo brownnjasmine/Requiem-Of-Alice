@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 264: expected statement.
-    dissolve
-            ^
+File "game/script.rpy", line 45: end of line expected.
+    show mc dog at center left
+                          ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Mar 25 18:08:25 2023
+Sat Apr 15 17:38:22 2023
