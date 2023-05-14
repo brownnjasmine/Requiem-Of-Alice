@@ -27,10 +27,13 @@ style gui_text:
 
 style button:
     properties gui.button_properties("button")
+    background Image("gui/button/button.png")
+
 
 style button_text is gui_text:
     properties gui.text_properties("button")
     yalign 0.5
+    xalign 0.5
 
 
 style label_text is gui_text:
@@ -145,7 +148,7 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("gui/namebox_Heart.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -291,44 +294,64 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.5
+        yalign 0.6
 
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton "Start":
+                background Image("gui/button/button.png")
+                action Start()
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton "History":
+                background Image("gui/button/button.png")
+                action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton "Save":
+                background Image("gui/button/button.png")
+                action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton "Load":
+            background Image("gui/button/button.png")
+            action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton "Preferences":
+            background Image("gui/button/button.png")
+            action ShowMenu("preferences")
 
         if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            textbutton "End Replay":
+                background Image("gui/button/button.png")
+                action EndReplay(confirm=True)
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton "Main Menu":
+                background Image("gui/button/button.png")
+                action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        textbutton "About":
+            background Image("gui/button/button.png")
+            action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton "Help":
+                background Image("gui/button/button.png")
+                action ShowMenu("help")
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton "Quit":
+                background Image("gui/button/button.png")
+                action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -380,12 +403,6 @@ style main_menu_vbox is vbox
 style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
-
-style main_menu_frame:
-    xsize 420
-    yfill True
-
-    background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0

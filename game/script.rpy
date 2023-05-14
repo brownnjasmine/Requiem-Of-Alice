@@ -42,7 +42,8 @@ label start:
     scene mathildas house
     with dissolve
 
-    show mc dog at left
+    show mc dog:
+        yalign 0.6
     with dissolve
 
     pov "I don’t recognize this room, but it looks nice."
