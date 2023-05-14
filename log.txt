@@ -1,13 +1,13 @@
-Sun May 14 13:18:49 2023
+Sun May 14 14:23:19 2023
 Windows-10-10.0.19045
 Ren'Py 8.0.3.22090809
  
 
 Bootstrap to the start of init.init took 0.05s
 Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.16s
-Loading script took 1.44s
+Loader init took 0.03s
+Loading error handling took 0.12s
+Loading script took 1.43s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\soul.toaster\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
@@ -16,20 +16,20 @@ Loading analysis data took 0.00s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\soul.toaster\\AppData\\Roaming/RenPy/backups\\Requiem-Of-Alice':
-Dump and make backups. took 0.05s
+Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.03s
+Initial gc. took 0.04s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.06s
+Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.03s
 Save screen analysis took 0.02s
 Prepare screens took 0.16s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.05s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.04s
