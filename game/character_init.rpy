@@ -183,7 +183,7 @@ image breakfast cg = "images/cgs/breakfast_cg.png"
 # name of the character.
 define pov = Character("[povname]", kind=adv, image="mc")                     # The player character
 define n = Character("")                                # The narrator
-define mathilda = Character("mathilda_name", kind=adv, image="mathilda", dynamic=True)   # Mathilda
+define mathilda = Character("mathilda_name", kind=adv, image="mathilda", dynamic=True, namebox_background=Frame("gui/namebox_Club.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))   # Mathilda
 
 define fabien = Character("Fabien LeBlanc", kind=adv, image="fabien")             # Fabien LeBlanc
 define tatianna = Character("tatianna_name", kind=adv, image="tatianna", dynamic=True)
