@@ -1,5 +1,9 @@
 # Requiem-Of-Alice
 
-Written and illustrated by (Discord) far from home#7954
+Requiem of Alice is a visual novel.
 
-Visual novel, Requiem of Alice
+Follow https://requiemofalice.tumblr.com/ for updates and information!
+
+Written and illustrated by (Discord) far from home#7954
+Code by (GitHub) @brownnjasmine
+Code by Avery R. (GitHub) @AveryApogee
