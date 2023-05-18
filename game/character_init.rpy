@@ -183,14 +183,14 @@ image breakfast cg = "images/cgs/breakfast_cg.png"
 # name of the character.
 define pov = Character("[povname]", kind=adv, image="mc", namebox_background=Frame("gui/namebox_Heart.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))                     # The player character
 define n = Character("", namebox_background=None)                                # The narrator
-define mathilda = Character("mathilda_name", kind=adv, image="mathilda", dynamic=True, namebox_background=Frame("gui/namebox_Diamonds.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))   # Mathilda
+define mathilda = Character("mathilda_name", kind=adv, image="mathilda", dynamic=True, namebox_background=Frame("gui/namebox_Diamond.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))   # Mathilda
 
-define fabien = Character("Fabien LeBlanc", kind=adv, image="fabien", namebox_background=Frame("gui/namebox_Spade_.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))             # Fabien LeBlanc
+define fabien = Character("Fabien LeBlanc", kind=adv, image="fabien", namebox_background=Frame("gui/namebox_Spade.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))             # Fabien LeBlanc
 define tatianna = Character("tatianna_name", kind=adv, image="tatianna", dynamic=True, namebox_background=Frame("gui/namebox_Heart.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define levy = Character("levy_name", kind=adv, image="leveret",dynamic=True, namebox_background=Frame("gui/namebox_Heart.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define mira = Character("mira_name", kind=adv, image="mira", dynamic=True, namebox_background=Frame("gui/namebox_Club.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define claudia = Character("claudia_name", kind=adv, image="claudia", dynamic=True, namebox_background=Frame("gui/namebox_Club.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
-define unknown = Character("???", namebox_background=Frame("gui/namebox_Diamonds.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
+define unknown = Character("???", namebox_background=Frame("gui/namebox_Diamond.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define follow1 = Character("Follower 1", namebox_background=Frame("gui/namebox_Club.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define follow2 = Character("Follower 2", namebox_background=Frame("gui/namebox_Club.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
 define girl1 = Character("Girl Student 1", namebox_background=Frame("gui/namebox_Club.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))
