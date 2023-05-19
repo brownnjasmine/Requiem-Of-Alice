@@ -613,16 +613,31 @@ label s3c2Tail:
 
     n "I felt like I couldn’t move or speak. It was like being held in a warm dark blanket. Whoever was speaking felt safe even if unfamiliar."
 
+    # Background change: Ending Part 1 CG
+    scene ending1 cg
+    with fade
+
+    pov "But who are you?"
+    
+    unknown "You will know soon enough. I will be waiting for you so, please…"
+
+    # Background change: Ending Part 2 CG
+    scene ending2 cg
+    with fade
+    
+    unknown "…Avenge me."
+
     # Background change: MC Dorm Room
     scene mcs bedroom
+    with dissolve
 
     show mc school neutral
     with dissolve
 
-    n "Soon enough I was awake again, awoken by a ringing and shaking of a small clock. I turned it off before getting up. This is where it begins. My new life as [povname] and as Alice."
+    n "Soon enough I was awake again, awoken by a ringing and shaking of a small clock. I turned it off before getting up. This is where it begins. My new life as [povname]."
+
 
     # This ends the game.
-
     return
 
 

@@ -177,6 +177,8 @@ image tea club= "images/backgrounds/tea_club.jpg"
 image transformation cg = "images/cgs/transformation_cg.png"
 image hug cg = "images/cgs/hug_cg.png"
 image breakfast cg = "images/cgs/breakfast_cg.png"
+image ending1 cg = "images/cgs/ending1_cg.png"
+image ending2 cg = "images/cgs/ending2_cg.png"
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
