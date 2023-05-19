@@ -138,7 +138,6 @@ image mathilda sad resigned:
     
 image mathilda stern:
     "images/characters/mathilda/stern.png"
-    zoom 0.5
     
 
 #Mira Shelbrooke
