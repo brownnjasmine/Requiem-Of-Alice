@@ -297,6 +297,7 @@ screen navigation():
         yalign 0.6
 
         spacing gui.navigation_spacing
+       
 
         if main_menu:
 

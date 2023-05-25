@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 45: end of line expected.
-    show mc dog at center left
-                          ^
+File "game/screens.rpy", line 300: 'define' is not a keyword argument or valid child for the vbox statement.
+    define gui.navigation_button_width = 420
+          ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Apr 15 17:38:22 2023
+Thu May 18 20:27:27 2023

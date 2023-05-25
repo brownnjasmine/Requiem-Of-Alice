@@ -244,7 +244,7 @@ define gui.file_slot_rows = 2
 ## These variables control the positioning and spacing of various user interface
 ## elements.
 
-## The position of the left side of the navigation buttons, relative to the left
+## The position of the left side of the navigation butstons, relative to the left
 ## side of the screen.
 define gui.navigation_xpos = 320
 
@@ -274,6 +274,8 @@ define gui.slot_spacing = 15
 
 ## The position of the main menu text.
 define gui.main_menu_text_xalign = 0.5
+
+define gui.game_menu_button_background = "gui/button/button.png"
 
 
 ## Frames ######################################################################
