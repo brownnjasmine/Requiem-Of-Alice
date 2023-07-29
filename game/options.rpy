@@ -30,6 +30,10 @@ define config.version = "0.0.2"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+    ~~~~~~~~~~~~ Directing, writing, and illustrating by babieworm\n
+    ~~~~~~~~~~~~ Audio by mist_ry\n
+    ~~~~~~~~~~~~ Code by Jasmine B.\n
+    ~~~~~~~~~~~~ Code by A. Lazuli R.\n
 """)
 
 
@@ -46,6 +50,7 @@ define build.name = "RequiemofAlice"
 ## to the player by default. Setting one of these to False will hide the
 ## appropriate mixer.
 
+define config.main_menu_music = "audio/A_Peaceful_Dream_1.mp3"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True

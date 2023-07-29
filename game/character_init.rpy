@@ -154,7 +154,11 @@ image tatianna angry:
     
 image tatianna neutral stern:
     "images/characters/tatianna_rosehart/neutral_stern.png" 
-    
+
+
+#initialize music tracks
+define audio.dream = "audio/A_Peaceful_Dream_1.mp3"
+define audio.garden = "audio/Our_Garden_4.mp3"
 
 
 #background images start
@@ -180,8 +184,7 @@ image breakfast cg = "images/cgs/breakfast_cg.png"
 image ending1 cg = "images/cgs/ending1_cg.png"
 image ending2 cg = "images/cgs/ending2_cg.png"
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+# Declare characters used by this game. The color argument colorizes the name of the character.
 define pov = Character("[povname]", kind=adv, image="mc", namebox_background=Frame("gui/namebox_Heart.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))                     # The player character
 define n = Character("", namebox_background=None)                                # The narrator
 define mathilda = Character("mathilda_name", kind=adv, image="mathilda", dynamic=True, namebox_background=Frame("gui/namebox_Diamond.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign))   # Mathilda
