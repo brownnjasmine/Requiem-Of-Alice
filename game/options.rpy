@@ -30,6 +30,10 @@ define config.version = "0.0.2"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+    ~~~~~~~~~~~~ Directing, writing, and illustrating by babieworm\n
+    ~~~~~~~~~~~~ Audio by mist_ry\n
+    ~~~~~~~~~~~~ Code by Jasmine B.\n
+    ~~~~~~~~~~~~ Code by A. Lazuli R.\n
 """)
 
 

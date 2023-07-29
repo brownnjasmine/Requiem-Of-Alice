@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 45: end of line expected.
-    show mc dog at center left
-                          ^
+File "game/screens.rpy", line 578: Line is indented, but the preceding text statement does not expect a block. Please check this line's indentation.
+    "\n\tAudio by mist_ry" +
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Apr 15 17:38:22 2023
+Sat Jul 29 12:55:55 2023
