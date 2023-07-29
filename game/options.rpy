@@ -50,6 +50,7 @@ define build.name = "RequiemofAlice"
 ## to the player by default. Setting one of these to False will hide the
 ## appropriate mixer.
 
+define config.main_menu_music = "audio/A_Peaceful_Dream_1.mp3"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True

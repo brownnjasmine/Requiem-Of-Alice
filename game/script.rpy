@@ -2,7 +2,7 @@
 # Declare variables
 
 default menuS2C1Selected = [False, False, False]
-default fadeSeconds = 1
+default fadeSeconds = 1.0
 
 
 # The game starts here.
@@ -126,7 +126,8 @@ label start:
     
     mathilda "All done?"
 
-    n "You give a little nod as you lay down. Now fed, you think about why you're here. You know you don't belong to anybody. The last thing you remember is digging through trash, actually. It finally occurs to you that you and this human seem to understand each other."
+    n "You give a little nod as you lay down. Now fed, you think about why you're here. You know you don't belong to anybody. The last thing you remember is digging through trash, actually."
+    n "It finally occurs to you that you and this human seem to understand each other."
 
     pov "Bark!"
 
@@ -929,7 +930,8 @@ label s3c2o0:
 
     pov school confused "Okay, thank you?"
     show mc school neutral at left
-    n "They seemed pretty peachy and more friendly. I decided to just listen as they mentioned all the different things they like about Dimitri. Everyone talked about times they almost got to touch his hand or speak, but seemed like no one ever really talked to him."
+    n "They seemed pretty peachy and more friendly. I decided to just listen as they mentioned all the different things they like about Dimitri."
+    n "Everyone talked about times they almost got to touch his hand or speak, but seemed like no one ever really talked to him."
     n "It made me think if everyone avoided him this way, it would be lonely."
 
     jump s3c2Tail
