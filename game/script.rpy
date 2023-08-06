@@ -2,6 +2,7 @@
 # Declare variables
 
 default menuS2C1Selected = [False, False, False]
+default fadeSeconds = 1.0
 
 
 # The game starts here.
@@ -26,6 +27,8 @@ label start:
 
 
     ### -------------------- Section 1 -------------------- ###
+
+    play music garden loop fadein fadeSeconds
 
     # Background: Black Screen
     scene blank
@@ -123,7 +126,8 @@ label start:
     
     mathilda "All done?"
 
-    n "You give a little nod as you lay down. Now fed, you think about why you're here. You know you don't belong to anybody. The last thing you remember is digging through trash, actually. It finally occurs to you that you and this human seem to understand each other."
+    n "You give a little nod as you lay down. Now fed, you think about why you're here. You know you don't belong to anybody. The last thing you remember is digging through trash, actually."
+    n "It finally occurs to you that you and this human seem to understand each other."
 
     pov "Bark!"
 
@@ -249,6 +253,9 @@ label start:
     scene transformation cg
     with fade
 
+    stop music fadeout fadeSeconds
+    play music dream loop fadein fadeSeconds
+
     mathilda "It worked! I know this will be very new, but I promise it will be worth it."
 
     pov "What happened? W-what am I saying? Wait, I am saying. I’m talking!"
@@ -266,6 +273,9 @@ label start:
     # Background change: Mysterious Room
     scene mathildas house
     with dissolve
+
+    stop music fadeout fadeSeconds
+    play music garden loop fadein fadeSeconds
 
     show mathilda happy at right
     with dissolve
@@ -374,6 +384,9 @@ label start:
     scene breakfast cg
     with dissolve
 
+    stop music fadeout fadeSeconds
+    play music dream loop fadein fadeSeconds
+
     mathilda "Looks like you’re a quick learner. I was afraid I might have to feed you myself for a while."
 
     n "I blinked before noticing what I had done. Maybe being a human is easier than being a dog."
@@ -383,6 +396,9 @@ label start:
     # Background change: Mysterious Room
     scene mathildas house
     with dissolve
+
+    stop music fadeout fadeSeconds
+    play music garden loop fadein fadeSeconds
 
     show mc at left
     with dissolve
@@ -469,6 +485,9 @@ label start:
             # Background change: hug with Mathilda CG
             scene hug cg
 
+            stop music fadeout fadeSeconds
+            play music dream loop fadein fadeSeconds
+
         "Say you’ll miss her":
 
             pov "I’ll miss you"
@@ -476,11 +495,18 @@ label start:
             # Background change: hug with Mathilda CG
             scene hug cg
 
+            stop music fadeout fadeSeconds
+            play music dream loop fadein fadeSeconds
+
             mathilda "Oh, I’ll miss you too"
 
             n "She went over to give me a hug. I knew even if I wasn’t sure about what she wanted, I wanted to do it for her."
 
     scene blank
+
+    stop music fadeout fadeSeconds
+    play music garden loop fadein fadeSeconds
+
     n "We talked some more, the tension in the air now gone. I was just trying to enjoy what time I had left with her before I would have to leave."
 
 
@@ -617,6 +643,9 @@ label s3c2Tail:
     scene ending1 cg
     with fade
 
+    stop music fadeout fadeSeconds
+    play music dream loop fadein fadeSeconds
+
     pov "But who are you?"
     
     unknown "You will know soon enough. I will be waiting for you so, please…"
@@ -631,13 +660,16 @@ label s3c2Tail:
     scene mcs bedroom
     with dissolve
 
+    stop music fadeout fadeSeconds
+    play music garden loop fadein fadeSeconds
+
     show mc school neutral
     with dissolve
 
     n "Soon enough I was awake again, awoken by a ringing and shaking of a small clock. I turned it off before getting up. This is where it begins. My new life as [povname]."
 
 
-    # This ends the game.
+    # This ends the game
     return
 
 
@@ -898,7 +930,8 @@ label s3c2o0:
 
     pov school confused "Okay, thank you?"
     show mc school neutral at left
-    n "They seemed pretty peachy and more friendly. I decided to just listen as they mentioned all the different things they like about Dimitri. Everyone talked about times they almost got to touch his hand or speak, but seemed like no one ever really talked to him."
+    n "They seemed pretty peachy and more friendly. I decided to just listen as they mentioned all the different things they like about Dimitri."
+    n "Everyone talked about times they almost got to touch his hand or speak, but seemed like no one ever really talked to him."
     n "It made me think if everyone avoided him this way, it would be lonely."
 
     jump s3c2Tail

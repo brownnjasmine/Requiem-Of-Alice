@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 300: 'define' is not a keyword argument or valid child for the vbox statement.
-    define gui.navigation_button_width = 420
-          ^
+File "game/screens.rpy", line 578: Line is indented, but the preceding text statement does not expect a block. Please check this line's indentation.
+    "\n\tAudio by mist_ry" +
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Thu May 18 20:27:27 2023
+Sat Jul 29 12:55:55 2023

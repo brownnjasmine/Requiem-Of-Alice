@@ -1,4 +1,4 @@
-Sun May 28 13:02:42 2023
+Sat Jul 29 14:15:54 2023
 Windows-10-10.0.19045
 Ren'Py 8.0.3.22090809
  
@@ -6,46 +6,30 @@ Ren'Py 8.0.3.22090809
 Bootstrap to the start of init.init took 0.06s
 Early init took 0.00s
 Loader init took 0.06s
-Loading error handling took 0.10s
-Loading script took 1.64s
-Loading save slot metadata. took 0.18s
+Loading error handling took 0.12s
+Loading script took 1.53s
+Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\soul.toaster\\Documents\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.28s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'F:\\Users\\default.default-PC\\Documents\\Renpy\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.13s
+Loading analysis data took 0.00s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\soul.toaster\\AppData\\Roaming/RenPy/backups\\Requiem-Of-Alice':
-Dump and make backups. took 0.05s
+Backing up script files to 'C:\\Users\\default.default-PC\\AppData\\Roaming/RenPy/backups\\Requiem-Of-Alice':
+Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.02s
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.38s
 Cleaning stores took 0.00s
 Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.01s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.01s
 Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.17s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon (TM) R9 390 Series'
-Version: b'4.6.13596 Compatibility Profile Context 20.10.35.02 27.20.1034.6'
-Display Info: None
-Screen sizes: virtual=(1920, 1070) physical=(1755, 978) drawable=(1755, 978)
-Maximum texture size: 4096x4096
-controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1
-controller: '030000005e040000ff02000000007200' 'Controller (Xbox One For Windows)' 1

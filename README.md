@@ -4,8 +4,10 @@ Requiem of Alice is a visual novel.
 
 Follow https://requiemofalice.tumblr.com/ for updates and information!
 
-Written and illustrated by (Discord) far from home#7954
+Directing, writing, and illustrating by babieworm (Instagram) @scissorsandstring
+
+Audio by mist phonebook
 
 Code by Jasmine B. (GitHub) @brownnjasmine
 
-Code by Avery R. (GitHub) @AveryApogee
+Code by A. Lazuli R. (GitHub) @AveryApogee
