@@ -294,7 +294,7 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.6
+        yalign 0.5
 
         spacing gui.navigation_spacing
        
@@ -302,48 +302,39 @@ screen navigation():
         if main_menu:
 
             textbutton "Start":
-                background Image("gui/button/button.png")
                 action Start()
 
         else:
 
             textbutton "History":
-                background Image("gui/button/button.png")
                 action ShowMenu("history")
 
             textbutton "Save":
-                background Image("gui/button/button.png")
                 action ShowMenu("save")
 
         textbutton "Load":
-            background Image("gui/button/button.png")
             action ShowMenu("load")
 
         textbutton "Preferences":
-            background Image("gui/button/button.png")
             action ShowMenu("preferences")
 
         if _in_replay:
 
             textbutton "End Replay":
-                background Image("gui/button/button.png")
                 action EndReplay(confirm=True)
 
         elif not main_menu:
 
             textbutton "Main Menu":
-                background Image("gui/button/button.png")
                 action MainMenu()
 
         textbutton "About":
-            background Image("gui/button/button.png")
             action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
             textbutton "Help":
-                background Image("gui/button/button.png")
                 action ShowMenu("help")
 
         if renpy.variant("pc"):
@@ -351,7 +342,6 @@ screen navigation():
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
             textbutton "Quit":
-                background Image("gui/button/button.png")
                 action Quit(confirm=not main_menu)
 
 
